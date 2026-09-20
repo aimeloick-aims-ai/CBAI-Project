@@ -1,0 +1,18 @@
+{
+  "scope": "exploratory already-examined internal test; patch graphs only; AI names unvalidated",
+  "intervention": "replace every node assigned to target cluster with training mean input; edges unchanged",
+  "controls": "20 random subsets per patient/cluster, exact same count and degree histogram; overlap allowed; norm and spatial contiguity not matched",
+  "outcome": "decrease in probability of baseline predicted class; paired patient bootstrap 2000; descriptive unadjusted intervals",
+  "absent_clusters": "record presence=0; exclude from conditional effect estimate",
+  "seed": 2026,
+  "hashes": {
+    "data\\bracs_expanded_study_manifest.csv": "144f7330dd161a6e7c5645419a28bfbdfc835aa9d4cda5de55e73108c52d34ea",
+    "reports\\bracs_three_xai\\representations.npz": "f91f5d2293c68994ecc65f231d74abe428f6b3b613e84f6f5388c5466ec90aaf",
+    "reports\\bracs_three_xai\\gcexplainer_clusters.npz": "d62ffee3c7a765a6ae6154f7696aba875c0238411a11999613308ed3edeab762",
+    "reports\\cluster_review\\CONCEPTS_PROVISOIRES.json": "e6a5f0799bd062770321e0619e675c3ea8c32b3e1dfecb0d7cbcdc9ed71344a8",
+    "reports\\bracs_expanded\\gcn_11.pt": "080046d6f9e7876ea7756f891464203927431523b5b7798267beacb435aef4fc",
+    "reports\\bracs_expanded\\gcn_23.pt": "4d2d044e0f7e00cbc12d5e1e69779b105efd08be75df99236d510e7a6420aff2",
+    "reports\\bracs_expanded\\gcn_37.pt": "8414434aad397073354925be41d14b2d46dcb9927bbb5e637a16c23193f8a1c9"
+  },
+  "clinical_validation": false
+}

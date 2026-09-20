@@ -1,0 +1,12 @@
+{
+  "created_at": "2026-09-18T22:48:44.155380+00:00",
+  "verified_files": 35,
+  "verified_bytes": 186478926,
+  "partial_files": [],
+  "status": "pass",
+  "datasets": {
+    "BCSS": 10,
+    "BRACS": 25
+  },
+  "scope": "locally acquired files only; not full cohort completeness"
+}

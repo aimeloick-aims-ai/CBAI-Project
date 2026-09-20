@@ -1,0 +1,34 @@
+{
+  "scope": "exploratory_not_final_GCIA",
+  "patients": 6,
+  "probe_evaluations": 810,
+  "deletion_evaluations": 1080,
+  "checkpoint_hashes": {
+    "GCN_11.pt": "7e6965bad331a0ca3ba75a7c96453e98f83de858a09b09ce464d4a140b9bcf50",
+    "GCN_23.pt": "f843c197f308b1ed43a2ca00681759f357a331fc65f05aac2bbee9a617403e0a",
+    "GCN_37.pt": "18b26d56eeb521dbd553cd302e1644ea01994d7dc22cac3bbdd97b9c80fafaaf",
+    "GCN_53.pt": "4130436dff1a479569b191b81c4b162199b0857ae46f71c122c39455f9db01ec",
+    "GCN_71.pt": "b7c8b08ab5b461ad49170c4a8c292d55ecb8250a351a454c5b4d00e202295cba",
+    "GraphSAGE_11.pt": "a525fa8f65ea6c89de53f80bc6bf6087b2325f727a22173e1e5acc28ec21ba6f",
+    "GraphSAGE_23.pt": "3f49db4cfeff22e9c70ee1f9bdc49be6b16c8b41c4672fc44e1975584e445a59",
+    "GraphSAGE_37.pt": "fa1c17911c8538776c2eeb1e9dd590a9992ff514e1b7b3de306251d4834380cf",
+    "GraphSAGE_53.pt": "3509a60e6877d22f7923a20771f79676dd0c1eaf6e50d94ba501e5b6a79abdb8",
+    "GraphSAGE_71.pt": "c87cf8cf9d25616a2f559cf6a39268f29a9eba41499a74dd0d9fa9fd812d89c7",
+    "GATv2_11.pt": "5d597fc6d0753d5506951843b5dbae7750edbe6fdd65191101dbffce8f906dba",
+    "GATv2_23.pt": "29955ac350ffd86db938920c08357df8796a83a54f4afa2bb04914640398e6df",
+    "GATv2_37.pt": "8696872b52c527e9a53eab1144c02d17d36ad8ddabc47f5205921c2307e1a496",
+    "GATv2_53.pt": "82e6ea090239dc2d6e5b779cb07076286a914dedeb44ffc485a3c0204bb4eb0b",
+    "GATv2_71.pt": "23b6d70aa2ec7a0d808fba3623df94cc77eb278c1a9f310740f93e98559c54dc"
+  },
+  "protocol_sha256": "948047e445f81b9a8061d49ef22199c734e4c9a08eef3d59c87a4f6dba4531d7",
+  "manifest_sha256": "fac9a2839268441224d81f583945129f5e25c4125f780f766d03f021a5ac96bc",
+  "script_sha256": "b979b17c072d9e3a578d0398a869ae1ff68549661bde06bb4d732746293d45b1",
+  "limitations": [
+    "No nuclear segmentation or NuCLS validation.",
+    "No BACH external diagnosis evaluation.",
+    "Deletion realism and non-target preservation unvalidated.",
+    "Six convenience-sampled patients; no population claim.",
+    "Frozen BRACS models are out of domain on BCSS.",
+    "Simple gradient baseline is not TCAV or GNNExplainer."
+  ]
+}

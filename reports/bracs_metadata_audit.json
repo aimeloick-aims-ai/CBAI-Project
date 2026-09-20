@@ -1,0 +1,16 @@
+{
+  "source": "BRACS.xlsx/WSI_Information",
+  "source_sha256": "9622108cf2bbf05b997e03611587ef35e29a658b13afc22f248240c5eb854edf",
+  "observed_slides": 547,
+  "observed_patients": 189,
+  "roi_total_in_summary": 4539,
+  "patient_overlap_all_slides": {
+    "67": [
+      "train",
+      "val"
+    ]
+  },
+  "patient_overlap_roi_slides": {},
+  "status": "requires_review_before_training",
+  "scope": "summary_metadata_only; FTP image inventory not fully reconciled"
+}

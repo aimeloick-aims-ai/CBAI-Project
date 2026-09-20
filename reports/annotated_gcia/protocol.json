@@ -1,0 +1,14 @@
+{
+  "scope": "exploratory frozen BRACS classifier audit on eight previously explored annotated BCSS patients; not external diagnostic validation",
+  "concept_codes": {
+    "tumor": 1,
+    "stroma": 2,
+    "lymphocytic_infiltrate": 3
+  },
+  "probes": "ridge alpha10; leave-one-patient-out; inverse patch-count patient weighting; input/layer1/layer2; constant comparator from training patients",
+  "patch_edits": "up to five >=80% tumor recipients; nearest RGB-mean same-patient >=80% stroma donor; same-patient >=80% tumor control distinct from recipient; re-encode actual substituted RGB patch",
+  "graph_edits": "remove up to five tumor-stroma edges with both endpoints >=80% pure; 20 random matched-count and matched-geometric-length deletion controls; record connectivity; node attributes unchanged",
+  "validity": "joint tumor-to-stroma substitution, not isolated concept manipulation; no human plausibility approval; diagnostic performance on BCSS unknown",
+  "downloads": 0,
+  "script_sha256": "45648d9b7cf24b2ba04c54d142865e78500d0fe770aee84b9a718f84135cd6fc"
+}

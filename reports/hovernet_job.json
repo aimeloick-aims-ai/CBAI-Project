@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "exit_code": 0,
+  "log": "reports/hovernet_smoke.log",
+  "output": "reports/cell_graph_hovernet",
+  "scientific_segmentation_validation": false
+}

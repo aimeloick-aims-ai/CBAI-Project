@@ -1,0 +1,160 @@
+[
+  {
+    "category": "0_N",
+    "listed_files": 46,
+    "selected_files": [
+      "BRACS_1295_N_3.png"
+    ],
+    "max_file_mib": 16,
+    "skipped_large_files": [
+      "BRACS_1295_N_1.png",
+      "BRACS_1295_N_2.png",
+      "BRACS_1296_N_1.png",
+      "BRACS_1296_N_2.png",
+      "BRACS_1584_N_2.png",
+      "BRACS_1876_N_3.png",
+      "BRACS_1876_N_6.png"
+    ],
+    "scope": "lexical bounded acquisition sample; not study exclusions"
+  },
+  {
+    "category": "1_PB",
+    "listed_files": 43,
+    "selected_files": [
+      "BRACS_1271_PB_12.png"
+    ],
+    "max_file_mib": 16,
+    "skipped_large_files": [
+      "BRACS_1271_PB_11.png",
+      "BRACS_1595_PB_4.png",
+      "BRACS_1595_PB_7.png",
+      "BRACS_1595_PB_9.png",
+      "BRACS_1608_PB_5.png",
+      "BRACS_1610_PB_4.png"
+    ],
+    "scope": "lexical bounded acquisition sample; not study exclusions"
+  },
+  {
+    "category": "2_UDH",
+    "listed_files": 46,
+    "selected_files": [
+      "BRACS_1003660_UDH_1.png"
+    ],
+    "max_file_mib": 16,
+    "skipped_large_files": [
+      "BRACS_265_UDH_19.png"
+    ],
+    "scope": "lexical bounded acquisition sample; not study exclusions"
+  },
+  {
+    "category": "3_FEA",
+    "listed_files": 49,
+    "selected_files": [
+      "BRACS_1271_FEA_1.png"
+    ],
+    "max_file_mib": 16,
+    "skipped_large_files": [
+      "BRACS_1797_FEA_1.png",
+      "BRACS_1797_FEA_4.png",
+      "BRACS_1798_FEA_2.png",
+      "BRACS_1798_FEA_3.png",
+      "BRACS_1798_FEA_4.png"
+    ],
+    "scope": "lexical bounded acquisition sample; not study exclusions"
+  },
+  {
+    "category": "4_ADH",
+    "listed_files": 41,
+    "selected_files": [
+      "BRACS_1271_ADH_3.png"
+    ],
+    "max_file_mib": 16,
+    "skipped_large_files": [
+      "BRACS_1797_ADH_3.png"
+    ],
+    "scope": "lexical bounded acquisition sample; not study exclusions"
+  },
+  {
+    "category": "5_DCIS",
+    "listed_files": 40,
+    "selected_files": [
+      "BRACS_1361_DCIS_3.png"
+    ],
+    "max_file_mib": 16,
+    "skipped_large_files": [
+      "BRACS_1361_DCIS_1.png",
+      "BRACS_1366_DCIS_1.png",
+      "BRACS_1366_DCIS_3.png",
+      "BRACS_1366_DCIS_4.png",
+      "BRACS_1366_DCIS_5.png",
+      "BRACS_1366_DCIS_6.png",
+      "BRACS_1366_DCIS_7.png",
+      "BRACS_1366_DCIS_8.png",
+      "BRACS_1366_DCIS_9.png",
+      "BRACS_1368_DCIS_1.png",
+      "BRACS_735_DCIS_1.png",
+      "BRACS_735_DCIS_3.png",
+      "BRACS_735_DCIS_8.png",
+      "BRACS_736_DCIS_1.png",
+      "BRACS_736_DCIS_2.png",
+      "BRACS_736_DCIS_7.png",
+      "BRACS_736_DCIS_9.png",
+      "BRACS_737_DCIS_3.png",
+      "BRACS_737_DCIS_4.png"
+    ],
+    "scope": "lexical bounded acquisition sample; not study exclusions"
+  },
+  {
+    "category": "6_IC",
+    "listed_files": 47,
+    "selected_files": [
+      "BRACS_1392_IC_3.png"
+    ],
+    "max_file_mib": 16,
+    "skipped_large_files": [
+      "BRACS_1361_IC_2.png",
+      "BRACS_1362_IC_1.png",
+      "BRACS_1368_IC_2.png",
+      "BRACS_1392_IC_1.png",
+      "BRACS_1392_IC_2.png",
+      "BRACS_1392_IC_4.png",
+      "BRACS_1392_IC_5.png",
+      "BRACS_1394_IC_1.png",
+      "BRACS_1394_IC_2.png",
+      "BRACS_1394_IC_3.png",
+      "BRACS_1394_IC_4.png",
+      "BRACS_1394_IC_5.png",
+      "BRACS_738_IC_1.png",
+      "BRACS_738_IC_11.png",
+      "BRACS_738_IC_17.png",
+      "BRACS_738_IC_2.png",
+      "BRACS_738_IC_20.png",
+      "BRACS_738_IC_23.png",
+      "BRACS_738_IC_26.png",
+      "BRACS_738_IC_28.png",
+      "BRACS_738_IC_32.png",
+      "BRACS_738_IC_5.png",
+      "BRACS_738_IC_7.png",
+      "BRACS_738_IC_9.png",
+      "BRACS_739_IC_12.png",
+      "BRACS_739_IC_13.png",
+      "BRACS_739_IC_24.png",
+      "BRACS_739_IC_25.png",
+      "BRACS_739_IC_29.png",
+      "BRACS_739_IC_3.png",
+      "BRACS_739_IC_35.png",
+      "BRACS_739_IC_37.png",
+      "BRACS_739_IC_7.png",
+      "BRACS_739_IC_9.png",
+      "BRACS_740_IC_1.png",
+      "BRACS_740_IC_13.png",
+      "BRACS_740_IC_14.png",
+      "BRACS_740_IC_19.png",
+      "BRACS_740_IC_2.png",
+      "BRACS_740_IC_22.png",
+      "BRACS_740_IC_8.png",
+      "BRACS_740_IC_9.png"
+    ],
+    "scope": "lexical bounded acquisition sample; not study exclusions"
+  }
+]

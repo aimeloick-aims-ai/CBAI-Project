@@ -1,0 +1,81 @@
+{
+  "scope": "adapted_existing_method_not_exact_paper_reproduction",
+  "explanations": 24,
+  "deletion_evaluations": 1512,
+  "patients": 8,
+  "torch_geometric_version": "2.8.0.post1",
+  "default_regularizers": {
+    "edge_size": 0.005,
+    "edge_reduction": "sum",
+    "node_feat_size": 1.0,
+    "node_feat_reduction": "mean",
+    "edge_ent": 1.0,
+    "node_feat_ent": 0.1,
+    "EPS": 1e-15
+  },
+  "sources": {
+    "TCGA-A1-A0SK_features.npz": "cfbde0bebf1900de604b8522729b89cd074fbcb0c187e7bd49741db851c3d4f0",
+    "0_pcam_gcn_11.pt": "fe7aeb21cf8890d887640699515961388a6230a2b840bcbd5f848fe12d5c4dd7",
+    "0_pcam_gcn_23.pt": "6121ebcaaad1de9d77e865eef90c354b4f7046ea79b2f296017e5da0e9495a55",
+    "0_pcam_gcn_37.pt": "9f962a4188a559e3a75bbdfbe7aa74f59d2adc2ded06013c6e8e489dcd047800",
+    "TCGA-A1-A0SP_features.npz": "c5d19cf8c0e85d8dffa819268b2ee79170c401ffe5668458e46c93b02f002a4d",
+    "1_pcam_gcn_11.pt": "03cd6813515e4ff65aec90b5a29f27f1e7d0c8edaff871709a97251652b2d6f1",
+    "1_pcam_gcn_23.pt": "8b6a65157965ad167c0c22cea2ab19a1e2c73f005cabd2deb3fd90acfb81b36f",
+    "1_pcam_gcn_37.pt": "6398644f474580fe4dd61359a020bf976df3a697984904f3afe196d13618888e",
+    "TCGA-A2-A04P_features.npz": "b5a7a1beac78b15c9a4a46c2f3a22222059085427c58d226cfd71d22ffbfed7c",
+    "2_pcam_gcn_11.pt": "60375a23a61658b05e44f64358037508e69a888c0cdb83e6ebfe8b82e6cb12a8",
+    "2_pcam_gcn_23.pt": "4e786dd4c90d596475c866e192261642559a0bd0becc87e6562d1cc7a0461d29",
+    "2_pcam_gcn_37.pt": "48dea2e0c0b5d25db250ce147db0b34406e70b5c05cb3a44a109dbeed098a4bc",
+    "TCGA-A2-A04Q_features.npz": "07c5721db9ecb23796c68dcdf9f70d8b09eb655eeda42330346a6e9e49609ca0",
+    "3_pcam_gcn_11.pt": "ee61ea0962e71ee7f7c8c6f292935cdb836b14f9bd61c2776a6fcf3f513469c8",
+    "3_pcam_gcn_23.pt": "e4a701556430d8faed1da8826580196c30d7cf0747759c10ae4bb355975eacbc",
+    "3_pcam_gcn_37.pt": "d614ad5652b8c72cb86934f95b9d99429c9d022dea84827970bd5b9296c7c45c",
+    "TCGA-A2-A04T_features.npz": "f8d1459e80fce2bb45175353c223f8c10a9d33da69c2df09add962ff8d2df04f",
+    "4_pcam_gcn_11.pt": "8f4ce964e64ed8d4e93f3b8a928e22d7f8971dbe0e2ab532949a5ed8ed24cbed",
+    "4_pcam_gcn_23.pt": "9b571b71c634f6301472241acc9604e377b32079e2ceb94ed46f62948d27ee57",
+    "4_pcam_gcn_37.pt": "f888b19881b8e9fdf1c6800d948361fcdfbb1742e632018ca42990e9209ac66e",
+    "TCGA-A2-A0CM_features.npz": "34a10da540add63244446b76e7d261e094ad52c0dafcb63d0963b83cb149316f",
+    "5_pcam_gcn_11.pt": "4a7e8ab066037f2d092fc418ad895c61a88faa2d4a6a1ee21c814563909748c4",
+    "5_pcam_gcn_23.pt": "c3a5afcfb12df1d51ab7c8073e5424cb205110c5455db014135559392d942f68",
+    "5_pcam_gcn_37.pt": "4891b6d3ef925259f29e8e494fadbf7742305321d6ca2b7c54ddb053d03d920f",
+    "TCGA-A2-A0D0_features.npz": "42dd0b60bf71d50e5f14cdf850b2d4f4ca6b433d438ca5794875a3bdc4c0d508",
+    "6_pcam_gcn_11.pt": "ca73ed93da40024608fcfd2de82471fce6d6833995b0aafe2469930bd106c49c",
+    "6_pcam_gcn_23.pt": "8ff6f0b1f9ac7a5114fefd9e9b96f0a68ac630a80cb0f369afe879466f7edb81",
+    "6_pcam_gcn_37.pt": "5ec262c508b79d77eed8811a1205c3729c6851c4661e08abf2969c85dc1fddef",
+    "TCGA-A2-A0D2_features.npz": "7619a5b9862057024a18cd6c68a13da5403f54415aa267bc1c2b4de49024a830"
+  },
+  "protocol": {
+    "scope": "adapted_existing_method_not_exact_paper_reproduction",
+    "task": "explain predicted mean tumor fraction, not diagnostic classification",
+    "source": "PyG GNNExplainer implementation of Ying et al. 2019",
+    "epochs": 100,
+    "learning_rate": 0.01,
+    "mask": "object nodes and edges, joint optimization; default regularizers",
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "fractions": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "random_controls": 20,
+    "deletion": "zero normalized features (training mean); topology unchanged",
+    "eligible": "all nodes including partially annotated nodes; output averaged over original valid nodes",
+    "metric": "absolute change from original regional prediction; signed change also saved",
+    "data": "eight existing BCSS patients with out-of-training checkpoints",
+    "heldout_status": "two previously examined patients, not a new untouched test",
+    "selection": "all patients, all seeds, fixed budgets; no result-driven tuning"
+  },
+  "script_sha256": "fbde7b95764cc083d6fed7a2b66349bce293b161eb782036a8387340dacdec83",
+  "protocol_sha256": "14b3e72f78536dc7f6bf56bf6f549c7c36a19bbfa17f94eab73ac5ceb6a938f4",
+  "limitations": [
+    "Adaptation to regression; not exact replication of original benchmarks.",
+    "Nodes and edges optimized jointly; node-only deletion tests one projection.",
+    "Feature replacement is not physical tissue removal.",
+    "Eight patients already examined; no new external validation.",
+    "High sensitivity does not establish concept specificity or biological causality."
+  ]
+}

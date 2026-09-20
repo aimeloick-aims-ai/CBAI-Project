@@ -1,0 +1,66 @@
+Patient 101: 15 candidate cells
+Patient 102: 30 candidate cells
+Patient 104: 98 candidate cells
+Patient 105: 159 candidate cells
+Patient 106: 102 candidate cells
+Patient 109: 130 candidate cells
+Patient 11: 193 candidate cells
+Patient 111: 19 candidate cells
+Patient 114: 377 candidate cells
+Patient 118: 36 candidate cells
+Patient 12: 114 candidate cells
+Patient 120: 86 candidate cells
+Patient 121: 221 candidate cells
+Patient 123: 155 candidate cells
+Patient 124: 125 candidate cells
+Patient 125: 346 candidate cells
+Patient 132: 91 candidate cells
+Patient 14: 94 candidate cells
+Patient 141: 200 candidate cells
+Patient 142: 91 candidate cells
+Patient 143: 87 candidate cells
+Patient 144: 57 candidate cells
+Patient 150: 79 candidate cells
+Patient 151: 126 candidate cells
+Patient 154: 31 candidate cells
+Patient 155: 66 candidate cells
+Patient 156: 88 candidate cells
+Patient 157: 39 candidate cells
+Patient 162: 110 candidate cells
+Patient 173: 64 candidate cells
+Patient 174: 154 candidate cells
+Patient 178: 83 candidate cells
+Patient 179: 36 candidate cells
+Patient 18: 122 candidate cells
+Patient 181: 42 candidate cells
+Patient 184: 130 candidate cells
+Patient 187: 116 candidate cells
+Patient 188: 43 candidate cells
+Patient 19: 64 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/1 [00:00<?, ?it/s]                                                                           Patient 20: unusable, explicitly recorded
+Generating 'info_dict' for instances:   0%|          | 0/172 [00:00<?, ?it/s]                                                                             Patient 22: 172 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/140 [00:00<?, ?it/s]                                                                             Patient 24: 140 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/129 [00:00<?, ?it/s]                                                                             Patient 3: 129 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/134 [00:00<?, ?it/s]                                                                             Patient 31: 134 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/161 [00:00<?, ?it/s]                                                                             Patient 33: 161 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/156 [00:00<?, ?it/s]                                                                             Patient 37: 156 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/140 [00:00<?, ?it/s]                                                                             Patient 44: 140 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/198 [00:00<?, ?it/s]                                                                             Patient 47: 198 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/133 [00:00<?, ?it/s]                                                                             Patient 48: 133 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/275 [00:00<?, ?it/s]                                                                             Patient 51: 275 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/128 [00:00<?, ?it/s]                                                                             Patient 52: 128 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/70 [00:00<?, ?it/s]                                                                            Patient 54: 70 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/177 [00:00<?, ?it/s]                                                                             Patient 56: 177 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/105 [00:00<?, ?it/s]                                                                             Patient 58: 105 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/175 [00:00<?, ?it/s]                                                                             Patient 59: 175 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/133 [00:00<?, ?it/s]                                                                             Patient 63: 133 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/79 [00:00<?, ?it/s]                                                                            Patient 67: 79 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/160 [00:00<?, ?it/s]                                                                             Patient 69: 160 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/320 [00:00<?, ?it/s]                                                                             Patient 7: 320 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/147 [00:00<?, ?it/s]                                                                             Patient 70: 147 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/50 [00:00<?, ?it/s]                                                                            Patient 71: 50 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/161 [00:00<?, ?it/s]                                                                             Patient 84: 161 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/99 [00:00<?, ?it/s]                                                                            Patient 87: 99 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/89 [00:00<?, ?it/s]                                                                            Patient 9: 89 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/189 [00:00<?, ?it/s]                                                                             Patient 92: 189 candidate cells
+Generating 'info_dict' for instances:   0%|          | 0/215 [00:00<?, ?it/s]                                                                             Patient 97: 215 candidate cells

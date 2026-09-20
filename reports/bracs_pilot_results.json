@@ -1,0 +1,135 @@
+{
+  "created_at": "2026-09-18T22:49:04.316109+00:00",
+  "scope": "exploratory_real_data_pilot_not_scientific_final_result",
+  "data": {
+    "dataset": "BRACS",
+    "train_roi": 14,
+    "validation_roi": 7,
+    "classes": {
+      "ADH": 0,
+      "DCIS": 1,
+      "FEA": 2,
+      "IC": 3,
+      "N": 4,
+      "PB": 5,
+      "UDH": 6
+    },
+    "patient_split_checked": true
+  },
+  "protocol": {
+    "epochs": 60,
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "node_builder": "rgb_patch_grid"
+  },
+  "architectures": {
+    "GCN": {
+      "runs": [
+        {
+          "seed": 11,
+          "train_accuracy": 0.42857142857142855,
+          "validation_accuracy": 0.2857142857142857
+        },
+        {
+          "seed": 23,
+          "train_accuracy": 0.5,
+          "validation_accuracy": 0.2857142857142857
+        },
+        {
+          "seed": 37,
+          "train_accuracy": 0.35714285714285715,
+          "validation_accuracy": 0.14285714285714285
+        },
+        {
+          "seed": 53,
+          "train_accuracy": 0.35714285714285715,
+          "validation_accuracy": 0.2857142857142857
+        },
+        {
+          "seed": 71,
+          "train_accuracy": 0.2857142857142857,
+          "validation_accuracy": 0.2857142857142857
+        }
+      ],
+      "validation_accuracy_mean": 0.2571428571428571,
+      "validation_accuracy_min": 0.14285714285714285,
+      "validation_accuracy_max": 0.2857142857142857
+    },
+    "GraphSAGE": {
+      "runs": [
+        {
+          "seed": 11,
+          "train_accuracy": 0.35714285714285715,
+          "validation_accuracy": 0.2857142857142857
+        },
+        {
+          "seed": 23,
+          "train_accuracy": 0.42857142857142855,
+          "validation_accuracy": 0.2857142857142857
+        },
+        {
+          "seed": 37,
+          "train_accuracy": 0.42857142857142855,
+          "validation_accuracy": 0.2857142857142857
+        },
+        {
+          "seed": 53,
+          "train_accuracy": 0.35714285714285715,
+          "validation_accuracy": 0.2857142857142857
+        },
+        {
+          "seed": 71,
+          "train_accuracy": 0.5,
+          "validation_accuracy": 0.2857142857142857
+        }
+      ],
+      "validation_accuracy_mean": 0.2857142857142857,
+      "validation_accuracy_min": 0.2857142857142857,
+      "validation_accuracy_max": 0.2857142857142857
+    },
+    "GATv2": {
+      "runs": [
+        {
+          "seed": 11,
+          "train_accuracy": 0.35714285714285715,
+          "validation_accuracy": 0.14285714285714285
+        },
+        {
+          "seed": 23,
+          "train_accuracy": 0.35714285714285715,
+          "validation_accuracy": 0.2857142857142857
+        },
+        {
+          "seed": 37,
+          "train_accuracy": 0.42857142857142855,
+          "validation_accuracy": 0.2857142857142857
+        },
+        {
+          "seed": 53,
+          "train_accuracy": 0.2857142857142857,
+          "validation_accuracy": 0.2857142857142857
+        },
+        {
+          "seed": 71,
+          "train_accuracy": 0.35714285714285715,
+          "validation_accuracy": 0.2857142857142857
+        }
+      ],
+      "validation_accuracy_mean": 0.2571428571428571,
+      "validation_accuracy_min": 0.14285714285714285,
+      "validation_accuracy_max": 0.2857142857142857
+    }
+  },
+  "unmet_requirements": [
+    "full_cohort",
+    "validated_nuclear_segmentation",
+    "independent_concept_annotations",
+    "intervention_validity_review",
+    "locked_BACH_external_evaluation"
+  ]
+}

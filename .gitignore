@@ -1,0 +1,16 @@
+.venv/
+.python/
+.uv-cache/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.pre-commit-cache/
+data/raw/
+data/processed/
+*.pt
+*.pth
+*.svs
+*.ndpi
+*.tiff
+.env
+reports/source_plan.txt

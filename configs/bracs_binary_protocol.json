@@ -1,0 +1,17 @@
+{
+  "task": "BRACS RoI N versus IC, not comprehensive breast diagnosis",
+  "splits": {"train": 20, "validation": 10, "internal_test": 10},
+  "encoder": "existing frozen mobilenet_v3_small-pcam",
+  "image_processing": "RGB resize 768x768, fixed 8x8 grid of 96px patches; original MPP unknown, domain/scale mismatch disclosed",
+  "models": ["mean_mlp", "gcn"],
+  "hidden": 16,
+  "epochs": 120,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "seeds": [11,23,37],
+  "selection": "highest validation ensemble balanced accuracy; tie favors mean_mlp",
+  "ensemble": "mean probability across all three seeds; threshold 0.5 fixed",
+  "test": "selected architecture only; no tuning after test; one image per patient",
+  "normalization": "training-node features only",
+  "scope": "small size-biased internal pilot; not official BRACS test or external validation"
+}

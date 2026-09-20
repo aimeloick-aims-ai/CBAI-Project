@@ -1,0 +1,218 @@
+{
+  "patients": 22,
+  "explanations": 198,
+  "results": {
+    "GCN": {
+      "checkpoint_sha256": {
+        "GCN_11.pt": "963889738aae463d96bcefda949cfecab18afb520bfca7f0e0548c29c9b082f7",
+        "GCN_23.pt": "144e9f4ecafe49cace64d5c8f3a282a9e693d523f9eaa31f3982de1de6f9563e",
+        "GCN_37.pt": "254d96776d5d6c89f1d4bf34f87b21ae1a6d59b56e763f7208dd19e357f971d2"
+      },
+      "weights_unchanged": true,
+      "probe_r2": {
+        "area": 0.9880463480949402,
+        "eccentricity": 0.8391788005828857,
+        "solidity": 0.8202230334281921
+      },
+      "gnnexplainer": {
+        "0.05": {
+          "gnnexplainer": 0.02333814718506553,
+          "random": 0.006662874059243634,
+          "difference": {
+            "mean": 0.016675273125821895,
+            "patient_bootstrap_95": [
+              0.008750405536230766,
+              0.024573709580369953
+            ]
+          }
+        },
+        "0.1": {
+          "gnnexplainer": 0.03761911166436744,
+          "random": 0.012857639089678274,
+          "difference": {
+            "mean": 0.024761472574689167,
+            "patient_bootstrap_95": [
+              0.012659322001943082,
+              0.03781150209463455
+            ]
+          }
+        },
+        "0.2": {
+          "gnnexplainer": 0.060246851408120354,
+          "random": 0.024463874293547686,
+          "difference": {
+            "mean": 0.03578297711457267,
+            "patient_bootstrap_95": [
+              0.018313126459604867,
+              0.055460761825300076
+            ]
+          }
+        }
+      },
+      "gcia": {
+        "0.95": {
+          "gcia_morphology": 0.01765555414286527,
+          "random": 0.0010258884253827008,
+          "probe_direction_success_rate": 1.0
+        },
+        "1.05": {
+          "gcia_morphology": 0.0181218683719635,
+          "random": 0.0010124306109818544,
+          "probe_direction_success_rate": 1.0
+        }
+      }
+    },
+    "GraphSAGE": {
+      "checkpoint_sha256": {
+        "GraphSAGE_11.pt": "63b7dbcd714dfb8b799e4ba3699db714d6563fcb50a87646e874a72429148428",
+        "GraphSAGE_23.pt": "68c2b55d7b792582d8f2a23721ee5187826d58ec8285b810a2379eb771a3e119",
+        "GraphSAGE_37.pt": "d92a5ea951e9ca4fe0ac61c8d193e1055e17438b6de7da62b3ebbe63934d5106"
+      },
+      "weights_unchanged": true,
+      "probe_r2": {
+        "area": 0.9802240133285522,
+        "eccentricity": 0.7797776460647583,
+        "solidity": 0.8541902899742126
+      },
+      "gnnexplainer": {
+        "0.05": {
+          "gnnexplainer": 0.033202640825148795,
+          "random": 0.007866644864958345,
+          "difference": {
+            "mean": 0.02533599596019044,
+            "patient_bootstrap_95": [
+              0.016885194772374677,
+              0.03328169052065773
+            ]
+          }
+        },
+        "0.1": {
+          "gnnexplainer": 0.05429433861916715,
+          "random": 0.01515027432504929,
+          "difference": {
+            "mean": 0.03914406429411787,
+            "patient_bootstrap_95": [
+              0.026164368428007668,
+              0.0520652676537407
+            ]
+          }
+        },
+        "0.2": {
+          "gnnexplainer": 0.08212001474969313,
+          "random": 0.02865561881300175,
+          "difference": {
+            "mean": 0.053464395936691396,
+            "patient_bootstrap_95": [
+              0.03553030360941634,
+              0.0741250207822657
+            ]
+          }
+        }
+      },
+      "gcia": {
+        "0.95": {
+          "gcia_morphology": 0.020908987657590347,
+          "random": 0.0011482327499172905,
+          "probe_direction_success_rate": 1.0
+        },
+        "1.05": {
+          "gcia_morphology": 0.021389254453507336,
+          "random": 0.0010846099562265656,
+          "probe_direction_success_rate": 1.0
+        }
+      }
+    },
+    "GATv2": {
+      "checkpoint_sha256": {
+        "GATv2_11.pt": "53ae2f2d8eeeb1fec1decb8ff043c94dcd00f360841c31ad90032f5d80da0be6",
+        "GATv2_23.pt": "efe621a8e1f5ae2c4e2082dfd745a5e4ab37a0cb373b51baeb999b91c0334240",
+        "GATv2_37.pt": "2c3cd0d16982f3ddbad933b21111118ca8905c9035746ff52748f282b637baf0"
+      },
+      "weights_unchanged": true,
+      "probe_r2": {
+        "area": 0.9829457998275757,
+        "eccentricity": 0.7888790369033813,
+        "solidity": 0.751610279083252
+      },
+      "gnnexplainer": {
+        "0.05": {
+          "gnnexplainer": 0.021683717541622394,
+          "random": 0.005424962791078019,
+          "difference": {
+            "mean": 0.016258754750544377,
+            "patient_bootstrap_95": [
+              0.00814831236744243,
+              0.024783727156957893
+            ]
+          }
+        },
+        "0.1": {
+          "gnnexplainer": 0.0336170880631967,
+          "random": 0.01070686157679919,
+          "difference": {
+            "mean": 0.02291022648639751,
+            "patient_bootstrap_95": [
+              0.010523784772182503,
+              0.035559143449433825
+            ]
+          }
+        },
+        "0.2": {
+          "gnnexplainer": 0.05144147800676751,
+          "random": 0.020722764956228663,
+          "difference": {
+            "mean": 0.030718713050538846,
+            "patient_bootstrap_95": [
+              0.014848975814653166,
+              0.048672529926354235
+            ]
+          }
+        }
+      },
+      "gcia": {
+        "0.95": {
+          "gcia_morphology": 0.014685999263416637,
+          "random": 0.0011865063824436882,
+          "probe_direction_success_rate": 1.0
+        },
+        "1.05": {
+          "gcia_morphology": 0.01502009548924186,
+          "random": 0.001096823439002037,
+          "probe_direction_success_rate": 1.0
+        }
+      }
+    }
+  },
+  "protocol": {
+    "architectures": [
+      "GCN",
+      "GraphSAGE",
+      "GATv2"
+    ],
+    "model_seeds": [
+      11,
+      23,
+      37
+    ],
+    "explanation_seeds": [
+      11,
+      23,
+      37
+    ],
+    "gnnexplainer_epochs": 100,
+    "budgets": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "random_controls": 20,
+    "scope": "exploratory audit on previously examined internal test; not external validation",
+    "gnnexplainer": "official PyG joint node/edge masks, evaluate node feature replacement with train mean; exact ensemble probabilities",
+    "gcia": "mean nuclear area, eccentricity, solidity probes from frozen hidden graph representations; training patients only",
+    "intervention": "all predicted nuclei area multiplied by 0.95 or 1.05; both axes multiplied by sqrt(factor); other features and graph unchanged",
+    "controls": "20 random isotropic changes with matched per-node norm in standardized feature space; numerical sensitivity controls, not histologically plausible edits",
+    "limitations": "predicted morphology, unknown physical scale; no pixel/contour edits; no spatial overlap check; no expert validity; area and axes change jointly",
+    "manifest_sha256": "0ea4af60efb31dfbdd6a68893e33bb37a30a9f725a26bcfa1c42866b1f498121",
+    "script_sha256": "abdebaf6f3ff254ff60e65e28f9e011707becc42d4220f7a35153e18f985ca83"
+  }
+}

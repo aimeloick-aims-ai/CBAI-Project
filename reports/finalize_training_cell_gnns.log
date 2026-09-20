@@ -1,0 +1,122 @@
+{
+  "protocol": {
+    "architectures": [
+      "GCN",
+      "GraphSAGE",
+      "GATv2"
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "epochs": 120,
+    "hidden": 16,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "scope": "exploratory unless independent segmentation and cohort validation are documented",
+    "manifest_sha256": "0ea4af60efb31dfbdd6a68893e33bb37a30a9f725a26bcfa1c42866b1f498121",
+    "script_sha256": "3d6c132b6c27bc397481ee0e019d84557e1eff1911573786a5906f52f5a6a206",
+    "test_policy": "all predefined architectures, seed-mean probabilities, threshold .5; no selection or tuning on test"
+  },
+  "validation": {
+    "GCN": {
+      "patients": 10,
+      "accuracy": 0.8,
+      "balanced_accuracy": 0.75,
+      "auc": 0.875,
+      "confusion": [
+        [
+          6,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "GraphSAGE": {
+      "patients": 10,
+      "accuracy": 0.7,
+      "balanced_accuracy": 0.6666666666666667,
+      "auc": 0.8333333333333333,
+      "confusion": [
+        [
+          5,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "GATv2": {
+      "patients": 10,
+      "accuracy": 0.8,
+      "balanced_accuracy": 0.75,
+      "auc": 0.8333333333333333,
+      "confusion": [
+        [
+          6,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    }
+  },
+  "test": {
+    "GCN": {
+      "patients": 22,
+      "accuracy": 0.7272727272727273,
+      "balanced_accuracy": 0.7321428571428572,
+      "auc": 0.7410714285714285,
+      "confusion": [
+        [
+          10,
+          4
+        ],
+        [
+          2,
+          6
+        ]
+      ]
+    },
+    "GraphSAGE": {
+      "patients": 22,
+      "accuracy": 0.7272727272727273,
+      "balanced_accuracy": 0.7321428571428572,
+      "auc": 0.7410714285714285,
+      "confusion": [
+        [
+          10,
+          4
+        ],
+        [
+          2,
+          6
+        ]
+      ]
+    },
+    "GATv2": {
+      "patients": 22,
+      "accuracy": 0.7272727272727273,
+      "balanced_accuracy": 0.7589285714285714,
+      "auc": 0.7410714285714285,
+      "confusion": [
+        [
+          9,
+          5
+        ],
+        [
+          1,
+          7
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+seed: 42
+device: cpu
+synthetic_software_fixture: true
+nodes: 4
+input_features: 3
+hidden_features: 8
+output_classes: 2
+architectures: [GCN, GraphSAGE, GATv2]
+wsi_path: null
+# A software fixture is not a patient, a cohort, or a scientific result.

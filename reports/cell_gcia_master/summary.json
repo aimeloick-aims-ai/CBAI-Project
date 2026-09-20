@@ -1,0 +1,15 @@
+{
+  "architecture": "GCN",
+  "dataset": "synthetic",
+  "num_graphs_evaluated": 4,
+  "mean_fidelity_score": 0.0047528743743896484,
+  "mean_probe_specificity": -0.008334139361977577,
+  "null_probe_test": {
+    "true_accuracy": 0.9230769276618958,
+    "null_accuracy_mean": 0.5476923227310181,
+    "selectivity_score": 0.37538460493087766,
+    "p_value": 0.16666666666666666
+  },
+  "pathologist_dossiers_exported": 4,
+  "status": "completed_successfully"
+}

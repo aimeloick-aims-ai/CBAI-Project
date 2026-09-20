@@ -1,0 +1,72 @@
+[
+  {
+    "source": "reports/cell_xai/summary.json",
+    "archive_path": "data\\cell_xai_summary.json",
+    "sha256": "f8ce6f98b5e4083d250fa0ffdfaef1613feb6a4c7a57240734159832f1a1fa24"
+  },
+  {
+    "source": "reports/cell_xai/coherent_summary.json",
+    "archive_path": "data\\cell_xai_coherent_summary.json",
+    "sha256": "91c0107685ddcea918c630b22e402f553df84da6780991fc498029d850bf4826"
+  },
+  {
+    "source": "reports/cell_xai/protocol.json",
+    "archive_path": "data\\cell_xai_protocol.json",
+    "sha256": "d9b2464fd6da1e38c286d6038cedb009e73c607db4cdabd3cf7c1112f60c8292"
+  },
+  {
+    "source": "reports/cell_xai/coherent_control_protocol.json",
+    "archive_path": "data\\cell_xai_coherent_control_protocol.json",
+    "sha256": "c63e8483cc4675b78f2a0fd5e355229f342451e467b71711673b18e644d71959"
+  },
+  {
+    "source": "reports/cell_xai/deletions.csv",
+    "archive_path": "data\\cell_xai_deletions.csv",
+    "sha256": "c58303a64cbd2c709fc7e50a74b099e08d9d941cb5456ba5f6f7ff3bd4e602b7"
+  },
+  {
+    "source": "reports/cell_xai/interventions.csv",
+    "archive_path": "data\\cell_xai_interventions.csv",
+    "sha256": "f6c92eefe00fa0b97c374440ea465b46aa2c13a26b6888419c2f5351e8607c46"
+  },
+  {
+    "source": "reports/cell_xai/coherent_controls.csv",
+    "archive_path": "data\\cell_xai_coherent_controls.csv",
+    "sha256": "1fa17b7f6bd5f60d4cb16ac1f222cf4a9375be9fe05e691af9feb2b31415b823"
+  },
+  {
+    "source": "reports/cell_xai/probes.csv",
+    "archive_path": "data\\cell_xai_probes.csv",
+    "sha256": "e406e99430585cd72bd2af629120b16690c2040440409e276c126489d865139c"
+  },
+  {
+    "source": "reports/cell_gnn_comparison/results.json",
+    "archive_path": "data\\cell_gnn_comparison_results.json",
+    "sha256": "53de2a8d954ea7ba93a767e207d1d7eaf1f6fb62624d6e29e1443f6af38bb8e1"
+  },
+  {
+    "source": "reports/cell_gnn_comparison/predictions.csv",
+    "archive_path": "data\\cell_gnn_comparison_predictions.csv",
+    "sha256": "e167952e50a388efdb8cab24355c45ce37d2c07495bff95f81bd7634959422dd"
+  },
+  {
+    "source": "reports/segmentation_evaluation/summary.json",
+    "archive_path": "data\\segmentation_evaluation_summary.json",
+    "sha256": "bf8029254643a24360a5e1515ac0a7561c3e536f180394b24fb8fedf71cbc7ac"
+  },
+  {
+    "source": "reports/segmentation_evaluation/metrics.csv",
+    "archive_path": "data\\segmentation_evaluation_metrics.csv",
+    "sha256": "33bebcbb646369edc5ecacef8ee2914e6f7c75527eda380416f459ad6a6f16fd"
+  },
+  {
+    "source": "reports/cell_cohort/completion.json",
+    "archive_path": "data\\cell_cohort_completion.json",
+    "sha256": "74d945303099e4f369e9eca3b54d5628a8676f29c4d53d72738ddeb5a07ccf1d"
+  },
+  {
+    "source": "reports/cell_cohort/excluded.csv",
+    "archive_path": "data\\cell_cohort_excluded.csv",
+    "sha256": "d9e57948de98507f6b7392700018195bf6c93276b416a8ef2598222159261150"
+  }
+]

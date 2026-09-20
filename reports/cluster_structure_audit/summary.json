@@ -1,0 +1,142 @@
+[
+  {
+    "mode": "node_removal",
+    "cluster": 0,
+    "patients": 16,
+    "target": 0.5793944495671894,
+    "control": 0.07462254281397805,
+    "difference": {
+      "mean": 0.5047719067532115,
+      "patient_bootstrap_95": [
+        0.3278163700950157,
+        0.6676180155979647
+      ]
+    }
+  },
+  {
+    "mode": "node_removal",
+    "cluster": 1,
+    "patients": 8,
+    "target": -0.010306892829248682,
+    "control": 0.012175089344964363,
+    "difference": {
+      "mean": -0.022481982174213048,
+      "patient_bootstrap_95": [
+        -0.11556224023872347,
+        0.04268138532934244
+      ]
+    }
+  },
+  {
+    "mode": "node_removal",
+    "cluster": 2,
+    "patients": 13,
+    "target": -0.021092602320445273,
+    "control": 0.008356339403857977,
+    "difference": {
+      "mean": -0.029448941724303256,
+      "patient_bootstrap_95": [
+        -0.08451459878710849,
+        0.03189844713317975
+      ]
+    }
+  },
+  {
+    "mode": "node_removal",
+    "cluster": 3,
+    "patients": 6,
+    "target": 0.09080176614224911,
+    "control": 0.0017559493891894818,
+    "difference": {
+      "mean": 0.08904581675305963,
+      "patient_bootstrap_95": [
+        -0.002219532895833256,
+        0.18168046486952005
+      ]
+    }
+  },
+  {
+    "mode": "node_removal",
+    "cluster": 4,
+    "patients": 18,
+    "target": -0.035291103154627815,
+    "control": -0.0012520886724814778,
+    "difference": {
+      "mean": -0.03403901448214634,
+      "patient_bootstrap_95": [
+        -0.06327435878639032,
+        -0.012200008603330299
+      ]
+    }
+  },
+  {
+    "mode": "boundary_removal",
+    "cluster": 0,
+    "patients": 16,
+    "target": 0.008118660509353504,
+    "control": 0.001923009353049565,
+    "difference": {
+      "mean": 0.0061956511563039385,
+      "patient_bootstrap_95": [
+        0.000490314874587057,
+        0.012916224753098499
+      ]
+    }
+  },
+  {
+    "mode": "boundary_removal",
+    "cluster": 1,
+    "patients": 8,
+    "target": 0.012763535894919187,
+    "control": 0.003373464528704062,
+    "difference": {
+      "mean": 0.009390071366215124,
+      "patient_bootstrap_95": [
+        -0.0019050383195281027,
+        0.027347401890729078
+      ]
+    }
+  },
+  {
+    "mode": "boundary_removal",
+    "cluster": 2,
+    "patients": 13,
+    "target": 0.009163587497403989,
+    "control": 8.914805948734274e-05,
+    "difference": {
+      "mean": 0.009074439437916646,
+      "patient_bootstrap_95": [
+        0.0007388255293839262,
+        0.01809159043424118
+      ]
+    }
+  },
+  {
+    "mode": "boundary_removal",
+    "cluster": 3,
+    "patients": 6,
+    "target": 0.013552619765202204,
+    "control": 0.0028751573214928308,
+    "difference": {
+      "mean": 0.010677462443709373,
+      "patient_bootstrap_95": [
+        -0.0053144053493936845,
+        0.028843760614593827
+      ]
+    }
+  },
+  {
+    "mode": "boundary_removal",
+    "cluster": 4,
+    "patients": 18,
+    "target": 0.0031841605280836425,
+    "control": 0.0022857462366422015,
+    "difference": {
+      "mean": 0.0008984142914414413,
+      "patient_bootstrap_95": [
+        -0.002773261189189118,
+        0.005539467253256586
+      ]
+    }
+  }
+]

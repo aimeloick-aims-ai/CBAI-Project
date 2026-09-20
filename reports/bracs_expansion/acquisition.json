@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "expected_images": 49,
+  "verified_images": 49,
+  "session_downloaded_bytes": 999972025,
+  "cap_bytes": 1000000000,
+  "verified_bytes": 999972025,
+  "failures": [],
+  "proposal_sha256": "8ef8c0b80d42e8776e0a8c64318f4fd5ecffc662b577bc7d1d916afef49b359b",
+  "updated_at": "2026-09-19T17:34:31.659629+00:00",
+  "scope": "acquisition_only; no new training or test partition"
+}

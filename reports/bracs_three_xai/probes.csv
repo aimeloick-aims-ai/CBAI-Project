@@ -1,0 +1,10 @@
+layer,concept,patient_mean_r2
+0,brightness_proxy,0.6788505925268584
+0,red_minus_blue_proxy,0.6692454584842235
+0,intensity_sd_proxy,0.722237924739968
+1,brightness_proxy,0.3239693733957927
+1,red_minus_blue_proxy,0.5866825070968313
+1,intensity_sd_proxy,0.18704892390134087
+2,brightness_proxy,0.19736625491275162
+2,red_minus_blue_proxy,0.3709240325584956
+2,intensity_sd_proxy,-0.042992319093195785

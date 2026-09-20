@@ -1,0 +1,57 @@
+{
+  "scope": "positive_control_for_tumor_fraction_prediction_not_diagnostic_GCIA",
+  "patients": 6,
+  "fits": 36,
+  "intervention_rows": 144,
+  "coverage": [
+    {
+      "patient": "TCGA-A1-A0SK",
+      "patches": 35,
+      "valid_patches": 35,
+      "candidate_edits": 0,
+      "edits_passing_numeric_checks": 0
+    },
+    {
+      "patient": "TCGA-A1-A0SP",
+      "patches": 88,
+      "valid_patches": 88,
+      "candidate_edits": 3,
+      "edits_passing_numeric_checks": 0
+    },
+    {
+      "patient": "TCGA-A2-A04P",
+      "patches": 48,
+      "valid_patches": 48,
+      "candidate_edits": 3,
+      "edits_passing_numeric_checks": 3
+    },
+    {
+      "patient": "TCGA-A2-A04Q",
+      "patches": 16,
+      "valid_patches": 16,
+      "candidate_edits": 0,
+      "edits_passing_numeric_checks": 0
+    },
+    {
+      "patient": "TCGA-A2-A04T",
+      "patches": 98,
+      "valid_patches": 91,
+      "candidate_edits": 3,
+      "edits_passing_numeric_checks": 3
+    },
+    {
+      "patient": "TCGA-A2-A0CM",
+      "patches": 63,
+      "valid_patches": 63,
+      "candidate_edits": 3,
+      "edits_passing_numeric_checks": 1
+    }
+  ],
+  "histological_realism_validated": false,
+  "interpretation": "Direct concept prediction is a positive control, not evidence of concept use in diagnosis.",
+  "sources": {
+    "configs\\focused_protocol.json": "2cd4235c2461c82b43947caed67b6bf8b3da34a539d6edd025b3dd0f231c228b",
+    "data\\bcss_extended_manifest.csv": "fac9a2839268441224d81f583945129f5e25c4125f780f766d03f021a5ac96bc",
+    "scripts\\run_focused_study.py": "4792ad73ba16c96e9ef2647352d89251bafbf0533e812ffd32e8cb71c07c34b9"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "scope": "exploratory_extension_fixed_before_execution",
+  "patients": 6,
+  "selection": "first six rows of existing BCSS metadata; independent of model scores",
+  "additional_download_budget_mib": 32,
+  "model_source": "existing frozen reports/real_xai checkpoints; no retraining or tuning",
+  "concept_codes": {"tumor": 1, "stroma": 2, "lymphocytic_infiltrate": 3},
+  "probe": "ridge alpha=1; train-only scaling; leave-one-patient-out",
+  "baselines": ["train mean", "within-patient shuffled labels", "gradient-times-input node deletion", "random node deletion"],
+  "deletion_nodes": 8,
+  "random_controls": 10,
+  "interpretation": "sensitivity and probe generalization; no validated concept-use claim"
+}

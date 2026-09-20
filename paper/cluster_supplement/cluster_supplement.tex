@@ -1,0 +1,47 @@
+\section{Supplementary exploratory audit of patch clusters}
+
+This supplementary analysis concerns the frozen patch GCN ensemble, not the cellular GNNs. Five previously fitted training-only clusters received AI-proposed histological names. These names have not been validated by a pathologist. The internal test cohort was already examined; structural analyses followed inspection of feature-occlusion results.
+
+Feature occlusion replaces assigned node embeddings with their training mean. Node removal deletes assigned nodes and incident edges. Boundary removal deletes edges between the assigned cluster and other clusters, retaining all nodes. Twenty random controls per patient match node count and original degree histogram, or undirected edge count, grid length and unordered endpoint degrees. Controls may overlap target elements. They do not match spatial contiguity or resulting connectedness; feature controls do not match perturbation norm.
+
+\begin{center}\small\begin{tabular}{llrr} Intervention & Cluster & Patients & Excess drop [95\% CI], pp \\\hline
+
+Features & 0 & 17 & 17.27 [10.36, 24.05] \\
+
+Features & 1 & 8 & 0.24 [-6.78, 5.43] \\
+
+Features & 2 & 13 & -4.76 [-8.92, -0.64] \\
+
+Features & 3 & 6 & 8.64 [-0.70, 18.52] \\
+
+Features & 4 & 18 & -4.03 [-6.86, -1.72] \\
+
+Nodes & 0 & 16 & 50.48 [32.78, 66.76] \\
+
+Nodes & 1 & 8 & -2.25 [-11.56, 4.27] \\
+
+Nodes & 2 & 13 & -2.94 [-8.45, 3.19] \\
+
+Nodes & 3 & 6 & 8.90 [-0.22, 18.17] \\
+
+Nodes & 4 & 18 & -3.40 [-6.33, -1.22] \\
+
+Boundary & 0 & 16 & 0.62 [0.05, 1.29] \\
+
+Boundary & 1 & 8 & 0.94 [-0.19, 2.73] \\
+
+Boundary & 2 & 13 & 0.91 [0.07, 1.81] \\
+
+Boundary & 3 & 6 & 1.07 [-0.53, 2.88] \\
+
+Boundary & 4 & 18 & 0.09 [-0.28, 0.55] \\
+
+\end{tabular}\end{center}
+
+Positive values indicate greater loss of confidence in the originally predicted class than under matched controls. Intervals use paired patient bootstrap and are descriptive, without multiplicity adjustment. Cohorts differ by cluster presence; empty-graph interventions are excluded. Large node removals can yield out-of-distribution graphs.
+
+Cluster 0 shows pronounced sensitivity to its node content. The proposed interface cluster 4 does not show a clear excess boundary effect. Neither observation establishes dependence on a clinically validated concept. Feature occlusion increases the mean fraction assigned to cluster 2, invalidating its interpretation as concept suppression. Cluster fractions are compositional: changes cannot establish independence of other clinical concepts.
+
+Clinical type annotations, independent concept probes, selective image/cellular interventions, histological plausibility and external-cohort validation remain outstanding. No assertion of biological causality or priority over existing methods is made.
+
+\begin{figure}[ht]\centering\includegraphics[width=\linewidth]{figures/cluster_structure.pdf}\caption{Exploratory structural perturbations of patch clusters. Names are unvalidated.}\end{figure}

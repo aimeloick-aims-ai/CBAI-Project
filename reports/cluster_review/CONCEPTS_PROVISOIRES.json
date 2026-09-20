@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "scope": "existing_patch_GCN_KMeans5_only",
+  "source": {
+    "file": "reports/cluster_concepts_source.txt",
+    "sha256": "001c271bbe92761e257c9138847cbc60e958df612a78c106e852712f17b9087d",
+    "shared_url": "https://chatgpt.com/share/6ab02f21-71d0-83ea-a327-3071f80de64a",
+    "shared_url_accessed_successfully": false
+  },
+  "concepts": [
+    {
+      "cluster_id": 0,
+      "source_label": "Periglandular fibrocollagenous stroma",
+      "label_fr": "Stroma fibrocollagénique périglandulaire",
+      "working_definition": "Hypothèse : tissu fibreux situé autour de structures glandulaires.",
+      "uncertainty": "Distinguer le stroma lui-même de la frontière épithélium–stroma (cluster 4).",
+      "annotation_origin": "user_supplied_chatgpt_interpretation",
+      "status": "candidate_unvalidated",
+      "expert_validated": false,
+      "purity": null,
+      "expert_confidence": null,
+      "reported_ai_confidence": null
+    },
+    {
+      "cluster_id": 1,
+      "source_label": "Dense collagenous / desmoplastic stroma",
+      "label_fr": "Stroma collagénique dense / desmoplastique",
+      "working_definition": "Hypothèse : prédominance de matrice fibreuse dense.",
+      "uncertainty": "Le qualificatif desmoplastique reste à vérifier ; ne pas déduire une réaction tumorale du cluster seul.",
+      "annotation_origin": "user_supplied_chatgpt_interpretation",
+      "status": "candidate_unvalidated",
+      "expert_validated": false,
+      "purity": null,
+      "expert_confidence": null,
+      "reported_ai_confidence": null
+    },
+    {
+      "cluster_id": 2,
+      "source_label": "Fibroblasts / spindle stromal cells",
+      "label_fr": "Fibroblastes / cellules stromales fusiformes",
+      "working_definition": "Hypothèse : présence de cellules stromales à morphologie allongée.",
+      "uncertainty": "Une forme fusiforme ne suffit pas à établir le type cellulaire fibroblastique.",
+      "annotation_origin": "user_supplied_chatgpt_interpretation",
+      "status": "candidate_unvalidated",
+      "expert_validated": false,
+      "purity": null,
+      "expert_confidence": null,
+      "reported_ai_confidence": null
+    },
+    {
+      "cluster_id": 3,
+      "source_label": "Invasive epithelial / tumor cells",
+      "label_fr": "Cellules épithéliales invasives / tumorales",
+      "working_definition": "Hypothèse : composante épithéliale cellulaire.",
+      "uncertainty": "Le caractère tumoral et surtout invasif nécessite une confirmation indépendante ; aucun diagnostic n'est établi ici.",
+      "annotation_origin": "user_supplied_chatgpt_interpretation",
+      "status": "candidate_unvalidated",
+      "expert_validated": false,
+      "purity": null,
+      "expert_confidence": null,
+      "reported_ai_confidence": null
+    },
+    {
+      "cluster_id": 4,
+      "source_label": "Tumor–stroma interface / epithelial–stromal boundary",
+      "label_fr": "Interface tumeur–stroma / frontière épithélium–stroma",
+      "working_definition": "Hypothèse : juxtaposition de compartiments épithélial et stromal.",
+      "uncertainty": "Vérifier la frontière et le caractère tumoral ; chevauchement possible avec les clusters 0–2.",
+      "annotation_origin": "user_supplied_chatgpt_interpretation",
+      "status": "candidate_unvalidated",
+      "expert_validated": false,
+      "purity": null,
+      "expert_confidence": null,
+      "reported_ai_confidence": "approximately 3/4"
+    }
+  ]
+}

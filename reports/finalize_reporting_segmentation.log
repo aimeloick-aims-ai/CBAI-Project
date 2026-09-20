@@ -1,0 +1,20 @@
+{
+  "segmentation": {
+    "hovernet": {
+      "foreground_dice": 0.831382092920968,
+      "detection_f1": 0.8495120245691528,
+      "segmentation_quality": 0.7726495963009808,
+      "panoptic_quality": 0.6569292746621008,
+      "reference_instances": 6697
+    },
+    "watershed": {
+      "foreground_dice": 0.7616341658317668,
+      "detection_f1": 0.2876540538271518,
+      "segmentation_quality": 0.7081961219383571,
+      "panoptic_quality": 0.20447518238348605,
+      "reference_instances": 6697
+    }
+  },
+  "graphs": 65,
+  "nodes": 8154
+}

@@ -1,0 +1,77 @@
+{
+  "scope": "offline_inventory_and_proposal_no_download_no_training",
+  "inventory_scope": "official train and val only; official test not inventoried",
+  "counts": [
+    {
+      "official_split": "train",
+      "label": "IC",
+      "roi": 521,
+      "patients": 46,
+      "unexposed_patients": 41,
+      "total_bytes": 12619004240
+    },
+    {
+      "official_split": "train",
+      "label": "N",
+      "roi": 357,
+      "patients": 46,
+      "unexposed_patients": 41,
+      "total_bytes": 3816896587
+    },
+    {
+      "official_split": "val",
+      "label": "IC",
+      "roi": 47,
+      "patients": 4,
+      "unexposed_patients": 2,
+      "total_bytes": 1767086068
+    },
+    {
+      "official_split": "val",
+      "label": "N",
+      "roi": 46,
+      "patients": 8,
+      "unexposed_patients": 6,
+      "total_bytes": 417737411
+    }
+  ],
+  "previously_exposed_patients": [
+    "11",
+    "141",
+    "143",
+    "164",
+    "169",
+    "173",
+    "174",
+    "176",
+    "181",
+    "182",
+    "184",
+    "187",
+    "20",
+    "27",
+    "37",
+    "65",
+    "71"
+  ],
+  "patient_overlap_official_roi_partitions": {},
+  "proposed_patients": 40,
+  "proposed_images": 40,
+  "additional_bytes": 233921626,
+  "additional_mib": 223.09,
+  "budget_mib": 150,
+  "within_budget": false,
+  "unmet_quotas": [],
+  "selection": "one <=16MiB smallest RoI/patient; patient hash order; N then IC; test reserved first",
+  "limits": [
+    "Smallest-file sampling biases size/morphology; not a representative cohort.",
+    "Mixed-label patients assigned only once; labels belong to RoIs, not patients.",
+    "Internal test is not official test; ten patients cannot support strong precision.",
+    "Normal vs invasive RoI is not comprehensive breast diagnosis.",
+    "This is a proposed design, not a power-based sample-size calculation."
+  ],
+  "source_hashes": {
+    "data\\bracs_roi_inventory.csv": "716b9f34534efb2124ea69ac3ee0eae65a05f31cc3ab4ca464fb50d2b34fe618",
+    "data\\bracs_slide_metadata.csv": "6ad6da1fd528e7402086c674fb68ff00a16b0c0f4f30c90b85f7433becaff7bc"
+  }
+}

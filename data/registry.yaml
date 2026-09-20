@@ -1,0 +1,84 @@
+schema_version: 1
+status: pilot_acquired_not_full_cohorts
+as_of: '2026-09-18'
+user_reports_no_data: false
+datasets:
+- name: BRACS
+  role: primary_development
+  url: https://www.bracs.icar.cnr.it/
+  version: FTP BRACS_RoI/latest_version observed 2026-09-18; summary SHA256 recorded
+  license: non-commercial research; terms supplied by user from official portal
+  license_accepted: null
+  acquired_at: '2026-09-18T16:26:59.487378+00:00'
+  local_path: data/raw/BRACS
+  observed_bytes: 150142300
+  sha256_manifest: data/checksums.csv
+  observed_patients: 16
+  observed_slides: 16
+  annotations: diagnostic_labels_required
+  restrictions: pilot only; review WSI patient overlap before training
+  source_discrepancy: 'resolved against summary: 4539 RoI; complete FTP inventory
+    still pending'
+  status: pilot_acquired_train14_val7
+  file_manifest: data/bracs_smoke_manifest.csv
+  license_reviewed: true
+  user_authorized_acquisition: true
+  observed_roi: 21
+  summary_slides: 547
+  summary_patients: 189
+  summary_roi: 4539
+- name: BACH
+  role: locked_external_test
+  url: https://iciar2018-challenge.grand-challenge.org/
+  version: null
+  license: CC BY-NC-ND; official record terms to review for planned use
+  license_accepted: false
+  acquired_at: null
+  local_path: null
+  observed_bytes: null
+  sha256_manifest: null
+  observed_patients: null
+  observed_slides: null
+  annotations: four_diagnostic_classes_and_available_group_identifiers
+  restrictions: no_tuning; patient_metadata_must_be_verified
+  access_check: website_returned_403_to_research_browser
+  download_url: https://zenodo.org/records/3632035
+  status: not_acquired_external_test_locked
+- name: NuCLS
+  role: nuclear_concept_and_segmentation_validation
+  url: https://github.com/PathologyDataScience/NuCLS
+  version: null
+  license: CC0-1.0_dataset; MIT_code
+  license_accepted: false
+  acquired_at: null
+  local_path: null
+  observed_bytes: null
+  sha256_manifest: null
+  observed_patients: null
+  observed_slides: null
+  annotations: nuclei_classes_and_available_instance_masks
+  restrictions: TCGA_overlap_and_annotator_uncertainty_to_audit
+  download_url: https://sites.google.com/view/nucls/single-rater
+  corrected_data_url: https://drive.google.com/drive/folders/1eGlF9Dgu3WMEik4fqj0wJ13LKVufsfZ0
+  status: not_acquired
+- name: BCSS
+  role: tissue_concept_validation
+  url: https://github.com/PathologyDataScience/BCSS
+  version: metadata commit 3c49d554497dd896cd02ffe382503ef4ce28b1c1; public API snapshot
+  license: CC0-1.0_dataset; MIT_code
+  license_accepted: null
+  acquired_at: '2026-09-18T16:21:51.328190+00:00'
+  local_path: data/raw/BCSS
+  observed_bytes: 6505975
+  sha256_manifest: data/checksums.csv
+  observed_patients: 2
+  observed_slides: 2
+  annotations: tissue_masks_and_RGB_regions
+  restrictions: mask_zero_is_ignore; TCGA_overlap_to_audit
+  status: pilot_acquired
+  file_manifest: data/bcss_smoke_manifest.csv
+  license_reviewed: true
+  user_authorized_acquisition: true
+  observed_regions: 2
+  rgb_mpp: 1.0
+  mask_resolution: native; unchanged

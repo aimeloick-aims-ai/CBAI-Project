@@ -1,0 +1,32 @@
+{
+  "architectures": [
+    "GCN",
+    "GraphSAGE",
+    "GATv2"
+  ],
+  "model_seeds": [
+    11,
+    23,
+    37
+  ],
+  "explanation_seeds": [
+    11,
+    23,
+    37
+  ],
+  "gnnexplainer_epochs": 100,
+  "budgets": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "random_controls": 20,
+  "scope": "exploratory audit on previously examined internal test; not external validation",
+  "gnnexplainer": "official PyG joint node/edge masks, evaluate node feature replacement with train mean; exact ensemble probabilities",
+  "gcia": "mean nuclear area, eccentricity, solidity probes from frozen hidden graph representations; training patients only",
+  "intervention": "all predicted nuclei area multiplied by 0.95 or 1.05; both axes multiplied by sqrt(factor); other features and graph unchanged",
+  "controls": "20 random isotropic changes with matched per-node norm in standardized feature space; numerical sensitivity controls, not histologically plausible edits",
+  "limitations": "predicted morphology, unknown physical scale; no pixel/contour edits; no spatial overlap check; no expert validity; area and axes change jointly",
+  "manifest_sha256": "0ea4af60efb31dfbdd6a68893e33bb37a30a9f725a26bcfa1c42866b1f498121",
+  "script_sha256": "abdebaf6f3ff254ff60e65e28f9e011707becc42d4220f7a35153e18f985ca83"
+}

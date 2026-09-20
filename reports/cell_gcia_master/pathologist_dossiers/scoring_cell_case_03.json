@@ -1,0 +1,10 @@
+{
+  "case_id": "cell_case_03",
+  "patient_id": "patient_003",
+  "target_diagnosis": "Non-Invasive",
+  "fidelity_score": 0.014669597148895264,
+  "histological_plausibility_score": 4,
+  "cell_morphology_alignment": 4,
+  "counterfactual_validity": 4,
+  "pathologist_comments": "Ablation des noyaux atypiques r\u00e9duit la plausibilit\u00e9 tumorale."
+}

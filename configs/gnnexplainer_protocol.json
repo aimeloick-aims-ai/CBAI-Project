@@ -1,0 +1,17 @@
+{
+  "scope": "adapted_existing_method_not_exact_paper_reproduction",
+  "task": "explain predicted mean tumor fraction, not diagnostic classification",
+  "source": "PyG GNNExplainer implementation of Ying et al. 2019",
+  "epochs": 100,
+  "learning_rate": 0.01,
+  "mask": "object nodes and edges, joint optimization; default regularizers",
+  "seeds": [11, 23, 37],
+  "fractions": [0.05, 0.1, 0.2],
+  "random_controls": 20,
+  "deletion": "zero normalized features (training mean); topology unchanged",
+  "eligible": "all nodes including partially annotated nodes; output averaged over original valid nodes",
+  "metric": "absolute change from original regional prediction; signed change also saved",
+  "data": "eight existing BCSS patients with out-of-training checkpoints",
+  "heldout_status": "two previously examined patients, not a new untouched test",
+  "selection": "all patients, all seeds, fixed budgets; no result-driven tuning"
+}

@@ -1,0 +1,20 @@
+{
+  "scope": "FTP_metadata_inventory_only; no_images_downloaded",
+  "images": 3969,
+  "bytes": 50142914283,
+  "by_split": {
+    "train": 3657,
+    "val": 312
+  },
+  "by_class": {
+    "ADH": 428,
+    "DCIS": 705,
+    "FEA": 673,
+    "IC": 568,
+    "N": 403,
+    "PB": 757,
+    "UDH": 435
+  },
+  "inventory": "data/bracs_roi_inventory.csv",
+  "created_at": "2026-09-18T22:31:57.800247+00:00"
+}

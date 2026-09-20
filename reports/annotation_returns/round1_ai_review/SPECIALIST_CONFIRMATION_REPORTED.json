@@ -1,0 +1,11 @@
+{
+  "confirmation_source": "user_statement_in_conversation",
+  "user_statement": "le specilaliste m'a rassure de tout confirmer ,IA + specialiste c'est le rendu",
+  "review_type": "AI_generated_annotations_with_specialist_confirmation_reported_by_user",
+  "scope": "returned 68-example annotation batch",
+  "independent_blinded_validation": false,
+  "specialist_identity_recorded": false,
+  "specialist_review_date_recorded": false,
+  "original_evaluator_metadata_preserved": true,
+  "clinical_intervention_validation": false
+}

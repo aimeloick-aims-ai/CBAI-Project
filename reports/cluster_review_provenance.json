@@ -1,0 +1,1198 @@
+{
+  "sources": {
+    "data\\bracs_expanded_study_manifest.csv": "144f7330dd161a6e7c5645419a28bfbdfc835aa9d4cda5de55e73108c52d34ea",
+    "reports\\bracs_three_xai\\representations.npz": "f91f5d2293c68994ecc65f231d74abe428f6b3b613e84f6f5388c5466ec90aaf",
+    "reports\\bracs_three_xai\\gcexplainer_clusters.npz": "d62ffee3c7a765a6ae6154f7696aba875c0238411a11999613308ed3edeab762"
+  },
+  "coverage": [
+    {
+      "cluster": 0,
+      "training_patches": 833,
+      "training_patients": 24,
+      "review_examples": 16
+    },
+    {
+      "cluster": 1,
+      "training_patches": 290,
+      "training_patients": 14,
+      "review_examples": 14
+    },
+    {
+      "cluster": 2,
+      "training_patches": 420,
+      "training_patients": 24,
+      "review_examples": 16
+    },
+    {
+      "cluster": 3,
+      "training_patches": 174,
+      "training_patients": 6,
+      "review_examples": 6
+    },
+    {
+      "cluster": 4,
+      "training_patches": 459,
+      "training_patients": 22,
+      "review_examples": 16
+    }
+  ],
+  "selection": [
+    {
+      "cluster": 0,
+      "example": "C0_E01",
+      "selection": "central",
+      "patient_id": "51",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1483_N_1.png",
+      "source_sha256": "d3c906f6462efc72c798d9ba47b8fc375eaa9f50eccc11cebdb388ceb1da59c2",
+      "split": "train",
+      "node_index": 61,
+      "distance_to_centroid": 2.573047161102295,
+      "native_xyxy": [
+        486,
+        534,
+        585,
+        611
+      ]
+    },
+    {
+      "cluster": 0,
+      "example": "C0_E02",
+      "selection": "central",
+      "patient_id": "174",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1003718_N_1.png",
+      "source_sha256": "7edc063ab68bf758c0719be9ff0fb9f2111416e7da77ee45961beebd24fcd08e",
+      "split": "train",
+      "node_index": 16,
+      "distance_to_centroid": 2.8665859699249268,
+      "native_xyxy": [
+        0,
+        248,
+        114,
+        373
+      ]
+    },
+    {
+      "cluster": 0,
+      "example": "C0_E03",
+      "selection": "central",
+      "patient_id": "121",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1857_N_2.png",
+      "source_sha256": "972ff0b82dcb694ecce8d84f69012dd6193e07e5636d0300394cacf20a61c9f3",
+      "split": "train",
+      "node_index": 15,
+      "distance_to_centroid": 2.9706547260284424,
+      "native_xyxy": [
+        1199,
+        191,
+        1371,
+        384
+      ]
+    },
+    {
+      "cluster": 0,
+      "example": "C0_E04",
+      "selection": "central",
+      "patient_id": "44",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1622_N_3.png",
+      "source_sha256": "ac40ed2a976213810c05bf17ee08f98b06f317d4e31d262776d7ac222abe1180",
+      "split": "train",
+      "node_index": 35,
+      "distance_to_centroid": 3.0076162815093994,
+      "native_xyxy": [
+        358,
+        526,
+        479,
+        658
+      ]
+    },
+    {
+      "cluster": 0,
+      "example": "C0_E05",
+      "selection": "central",
+      "patient_id": "47",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1493_N_4.png",
+      "source_sha256": "14703c81c15bfd75b099357d9fb8ac0d4a37c58a4d4cf01946b761371605f92c",
+      "split": "train",
+      "node_index": 31,
+      "distance_to_centroid": 3.018988847732544,
+      "native_xyxy": [
+        786,
+        385,
+        899,
+        515
+      ]
+    },
+    {
+      "cluster": 0,
+      "example": "C0_E06",
+      "selection": "central",
+      "patient_id": "20",
+      "source_image": "data/raw/BRACS/RoI/val/0_N/BRACS_1295_N_1.png",
+      "source_sha256": "4539d8a061806a5a258d569a8021a23735f7f6c9aa564b540ba672afaaf1f9f3",
+      "split": "train",
+      "node_index": 18,
+      "distance_to_centroid": 3.2345035076141357,
+      "native_xyxy": [
+        562,
+        830,
+        843,
+        1246
+      ]
+    },
+    {
+      "cluster": 0,
+      "example": "C0_E07",
+      "selection": "central",
+      "patient_id": "63",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1604_N_3.png",
+      "source_sha256": "07e705f9b3dee0da34ed6ea2d680fd745401b985362c25a508a8edb185b7166f",
+      "split": "train",
+      "node_index": 31,
+      "distance_to_centroid": 3.2445859909057617,
+      "native_xyxy": [
+        1474,
+        631,
+        1685,
+        843
+      ]
+    },
+    {
+      "cluster": 0,
+      "example": "C0_E08",
+      "selection": "central",
+      "patient_id": "70",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1645_N_1.png",
+      "source_sha256": "93623dbe0f628ef74ebc3b72cbdd979dc8137f8e6d65dd9439bd2928f827f86e",
+      "split": "train",
+      "node_index": 10,
+      "distance_to_centroid": 3.296510934829712,
+      "native_xyxy": [
+        174,
+        109,
+        263,
+        219
+      ]
+    },
+    {
+      "cluster": 0,
+      "example": "C0_E09",
+      "selection": "central",
+      "patient_id": "31",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1319_N_17.png",
+      "source_sha256": "e36d9c796c10161471bcfda14b154eacddfb98f5d476ccd6d976f22d48686361",
+      "split": "train",
+      "node_index": 4,
+      "distance_to_centroid": 3.3525941371917725,
+      "native_xyxy": [
+        804,
+        0,
+        1005,
+        282
+      ]
+    },
+    {
+      "cluster": 0,
+      "example": "C0_E10",
+      "selection": "central",
+      "patient_id": "3",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1934_N_1.png",
+      "source_sha256": "04981377c75b457e11606cc250fa869ffa7897e0486fa4fe986d37fc71fa3252",
+      "split": "train",
+      "node_index": 9,
+      "distance_to_centroid": 3.9560747146606445,
+      "native_xyxy": [
+        96,
+        91,
+        193,
+        183
+      ]
+    },
+    {
+      "cluster": 0,
+      "example": "C0_E11",
+      "selection": "central",
+      "patient_id": "123",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1882_N_4.png",
+      "source_sha256": "bd57cc24d343bbd9e614cb357a449893c2cb384dcc1eb63a5abe09b16dc00c06",
+      "split": "train",
+      "node_index": 29,
+      "distance_to_centroid": 4.039257049560547,
+      "native_xyxy": [
+        760,
+        535,
+        912,
+        715
+      ]
+    },
+    {
+      "cluster": 0,
+      "example": "C0_E12",
+      "selection": "central",
+      "patient_id": "173",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1003675_N_1.png",
+      "source_sha256": "2d06cbc4e76bfebcfb44ad2ddbbbe9a3076a829cc7486ac68a8433a59af22964",
+      "split": "train",
+      "node_index": 32,
+      "distance_to_centroid": 4.130768299102783,
+      "native_xyxy": [
+        0,
+        949,
+        289,
+        1187
+      ]
+    },
+    {
+      "cluster": 0,
+      "example": "C0_E13",
+      "selection": "complementaire",
+      "patient_id": "97",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1858_N_1.png",
+      "source_sha256": "415a7580793c76494125db58838ac6f8957b917817e9f1271b910f33a465bd6e",
+      "split": "train",
+      "node_index": 48,
+      "distance_to_centroid": 7.137767791748047,
+      "native_xyxy": [
+        0,
+        1513,
+        264,
+        1766
+      ]
+    },
+    {
+      "cluster": 0,
+      "example": "C0_E14",
+      "selection": "complementaire",
+      "patient_id": "187",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1003716_N_1.png",
+      "source_sha256": "9d59fb37de117b1e40fe750127687ae10dc202abfeb6c7822283237006eb8cfa",
+      "split": "train",
+      "node_index": 58,
+      "distance_to_centroid": 9.454496383666992,
+      "native_xyxy": [
+        226,
+        1395,
+        341,
+        1595
+      ]
+    },
+    {
+      "cluster": 0,
+      "example": "C0_E15",
+      "selection": "complementaire",
+      "patient_id": "184",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1003670_IC_1.png",
+      "source_sha256": "611fc65a1075a6e19aac7e584b339a869a3478eb6e79a86dcbbe593abaef1f4d",
+      "split": "train",
+      "node_index": 58,
+      "distance_to_centroid": 13.654637336730957,
+      "native_xyxy": [
+        310,
+        903,
+        466,
+        1033
+      ]
+    },
+    {
+      "cluster": 0,
+      "example": "C0_E16",
+      "selection": "complementaire",
+      "patient_id": "142",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1003673_IC_1.png",
+      "source_sha256": "68ee80dcdb7ecaef18625e1e1078755549e87d47153e2cd7faf2c8771b9f0c4f",
+      "split": "train",
+      "node_index": 53,
+      "distance_to_centroid": 9.153190612792969,
+      "native_xyxy": [
+        449,
+        575,
+        540,
+        672
+      ]
+    },
+    {
+      "cluster": 1,
+      "example": "C1_E01",
+      "selection": "central",
+      "patient_id": "154",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1003677_IC_1.png",
+      "source_sha256": "83821d6ad1ba5ba7f3fd8cd8bffd4832d44d2bebdf5357a0a0a9d119b7315751",
+      "split": "train",
+      "node_index": 6,
+      "distance_to_centroid": 2.5953216552734375,
+      "native_xyxy": [
+        1478,
+        0,
+        1725,
+        232
+      ]
+    },
+    {
+      "cluster": 1,
+      "example": "C1_E02",
+      "selection": "central",
+      "patient_id": "104",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_747_IC_21.png",
+      "source_sha256": "91cb35a9930ce44d97c377c4962fb186c719d3c28c8eccc187c6bcb1b9073945",
+      "split": "train",
+      "node_index": 31,
+      "distance_to_centroid": 3.475329875946045,
+      "native_xyxy": [
+        2378,
+        480,
+        2718,
+        641
+      ]
+    },
+    {
+      "cluster": 1,
+      "example": "C1_E03",
+      "selection": "central",
+      "patient_id": "155",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1003684_IC_1.png",
+      "source_sha256": "f9772398f1ebf969275a9896cd749a57ef11152511b0a1b4bdc1a1df208a5793",
+      "split": "train",
+      "node_index": 10,
+      "distance_to_centroid": 4.825594902038574,
+      "native_xyxy": [
+        344,
+        187,
+        518,
+        375
+      ]
+    },
+    {
+      "cluster": 1,
+      "example": "C1_E04",
+      "selection": "central",
+      "patient_id": "37",
+      "source_image": "data/raw/BRACS/RoI/val/6_IC/BRACS_1394_IC_3.png",
+      "source_sha256": "03775248ecb1604615c4c31937084e6c4b552001b9f717a3816d85d69a05863b",
+      "split": "train",
+      "node_index": 48,
+      "distance_to_centroid": 5.068860054016113,
+      "native_xyxy": [
+        0,
+        2474,
+        377,
+        2887
+      ]
+    },
+    {
+      "cluster": 1,
+      "example": "C1_E05",
+      "selection": "central",
+      "patient_id": "142",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1003673_IC_1.png",
+      "source_sha256": "68ee80dcdb7ecaef18625e1e1078755549e87d47153e2cd7faf2c8771b9f0c4f",
+      "split": "train",
+      "node_index": 35,
+      "distance_to_centroid": 5.256595134735107,
+      "native_xyxy": [
+        269,
+        383,
+        360,
+        480
+      ]
+    },
+    {
+      "cluster": 1,
+      "example": "C1_E06",
+      "selection": "central",
+      "patient_id": "181",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1003667_IC_1.png",
+      "source_sha256": "cbbf10628f4ec29b012663d7ec7d057bced3fd4ef395cc4c9f18b6a76b018bf5",
+      "split": "train",
+      "node_index": 19,
+      "distance_to_centroid": 5.362418174743652,
+      "native_xyxy": [
+        408,
+        216,
+        545,
+        324
+      ]
+    },
+    {
+      "cluster": 1,
+      "example": "C1_E07",
+      "selection": "central",
+      "patient_id": "18",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1287_IC_5.png",
+      "source_sha256": "505efc7b89b55986e75a009ad0d8fbe3e4b65d3ae7c62c0aca52fbf12ed930cb",
+      "split": "train",
+      "node_index": 8,
+      "distance_to_centroid": 5.945611953735352,
+      "native_xyxy": [
+        0,
+        185,
+        338,
+        372
+      ]
+    },
+    {
+      "cluster": 1,
+      "example": "C1_E08",
+      "selection": "central",
+      "patient_id": "92",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1875_IC_10.png",
+      "source_sha256": "6aa7f5a97fd263f70be4a81bc8b07ff5fe6cceac7977aebb36d9a3cd59deb69e",
+      "split": "train",
+      "node_index": 6,
+      "distance_to_centroid": 5.988254070281982,
+      "native_xyxy": [
+        615,
+        0,
+        719,
+        88
+      ]
+    },
+    {
+      "cluster": 1,
+      "example": "C1_E09",
+      "selection": "central",
+      "patient_id": "63",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1604_N_3.png",
+      "source_sha256": "07e705f9b3dee0da34ed6ea2d680fd745401b985362c25a508a8edb185b7166f",
+      "split": "train",
+      "node_index": 56,
+      "distance_to_centroid": 7.790109634399414,
+      "native_xyxy": [
+        0,
+        1474,
+        211,
+        1685
+      ]
+    },
+    {
+      "cluster": 1,
+      "example": "C1_E10",
+      "selection": "central",
+      "patient_id": "31",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1319_N_17.png",
+      "source_sha256": "e36d9c796c10161471bcfda14b154eacddfb98f5d476ccd6d976f22d48686361",
+      "split": "train",
+      "node_index": 44,
+      "distance_to_centroid": 8.323165893554688,
+      "native_xyxy": [
+        804,
+        1405,
+        1005,
+        1687
+      ]
+    },
+    {
+      "cluster": 1,
+      "example": "C1_E11",
+      "selection": "central",
+      "patient_id": "141",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1231_IC_63.png",
+      "source_sha256": "6b4991b8d519adfb7d209fc99ad82296c487b104a72eacf076b82d304350affc",
+      "split": "train",
+      "node_index": 20,
+      "distance_to_centroid": 9.663284301757812,
+      "native_xyxy": [
+        382,
+        164,
+        479,
+        247
+      ]
+    },
+    {
+      "cluster": 1,
+      "example": "C1_E12",
+      "selection": "central",
+      "patient_id": "11",
+      "source_image": "data/raw/BRACS/RoI/val/6_IC/BRACS_1362_IC_1.png",
+      "source_sha256": "a8abd2b1f81bf359a30cc5ac90399e9902c1e2832d61d705e43847c88de9ef8e",
+      "split": "train",
+      "node_index": 36,
+      "distance_to_centroid": 10.187333106994629,
+      "native_xyxy": [
+        2118,
+        2533,
+        2648,
+        3167
+      ]
+    },
+    {
+      "cluster": 1,
+      "example": "C1_E13",
+      "selection": "complementaire",
+      "patient_id": "20",
+      "source_image": "data/raw/BRACS/RoI/val/0_N/BRACS_1295_N_1.png",
+      "source_sha256": "4539d8a061806a5a258d569a8021a23735f7f6c9aa564b540ba672afaaf1f9f3",
+      "split": "train",
+      "node_index": 40,
+      "distance_to_centroid": 11.821577072143555,
+      "native_xyxy": [
+        0,
+        2076,
+        281,
+        2492
+      ]
+    },
+    {
+      "cluster": 1,
+      "example": "C1_E14",
+      "selection": "complementaire",
+      "patient_id": "97",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1858_N_1.png",
+      "source_sha256": "415a7580793c76494125db58838ac6f8957b917817e9f1271b910f33a465bd6e",
+      "split": "train",
+      "node_index": 15,
+      "distance_to_centroid": 11.647022247314453,
+      "native_xyxy": [
+        1843,
+        252,
+        2107,
+        505
+      ]
+    },
+    {
+      "cluster": 2,
+      "example": "C2_E01",
+      "selection": "central",
+      "patient_id": "3",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1934_N_1.png",
+      "source_sha256": "04981377c75b457e11606cc250fa869ffa7897e0486fa4fe986d37fc71fa3252",
+      "split": "train",
+      "node_index": 49,
+      "distance_to_centroid": 3.1634738445281982,
+      "native_xyxy": [
+        96,
+        546,
+        193,
+        638
+      ]
+    },
+    {
+      "cluster": 2,
+      "example": "C2_E02",
+      "selection": "central",
+      "patient_id": "12",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1929_N_2.png",
+      "source_sha256": "64d79fee2a6a6ed3fc528305dcfc61bee5addc74a9a64f91314ed5505e214d48",
+      "split": "train",
+      "node_index": 60,
+      "distance_to_centroid": 4.240317344665527,
+      "native_xyxy": [
+        615,
+        1274,
+        769,
+        1457
+      ]
+    },
+    {
+      "cluster": 2,
+      "example": "C2_E03",
+      "selection": "central",
+      "patient_id": "92",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1875_IC_10.png",
+      "source_sha256": "6aa7f5a97fd263f70be4a81bc8b07ff5fe6cceac7977aebb36d9a3cd59deb69e",
+      "split": "train",
+      "node_index": 44,
+      "distance_to_centroid": 4.722297191619873,
+      "native_xyxy": [
+        410,
+        436,
+        514,
+        525
+      ]
+    },
+    {
+      "cluster": 2,
+      "example": "C2_E04",
+      "selection": "central",
+      "patient_id": "141",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1231_IC_63.png",
+      "source_sha256": "6b4991b8d519adfb7d209fc99ad82296c487b104a72eacf076b82d304350affc",
+      "split": "train",
+      "node_index": 16,
+      "distance_to_centroid": 4.826136589050293,
+      "native_xyxy": [
+        0,
+        164,
+        96,
+        247
+      ]
+    },
+    {
+      "cluster": 2,
+      "example": "C2_E05",
+      "selection": "central",
+      "patient_id": "70",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1645_N_1.png",
+      "source_sha256": "93623dbe0f628ef74ebc3b72cbdd979dc8137f8e6d65dd9439bd2928f827f86e",
+      "split": "train",
+      "node_index": 19,
+      "distance_to_centroid": 4.86138916015625,
+      "native_xyxy": [
+        262,
+        218,
+        350,
+        328
+      ]
+    },
+    {
+      "cluster": 2,
+      "example": "C2_E06",
+      "selection": "central",
+      "patient_id": "143",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1235_IC_18.png",
+      "source_sha256": "b7041f72718459ef6620d08d41716cf1a7b9b185978dc88b8522916a03e8b6db",
+      "split": "train",
+      "node_index": 62,
+      "distance_to_centroid": 4.947941303253174,
+      "native_xyxy": [
+        2553,
+        2716,
+        2979,
+        3104
+      ]
+    },
+    {
+      "cluster": 2,
+      "example": "C2_E07",
+      "selection": "central",
+      "patient_id": "154",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1003677_IC_1.png",
+      "source_sha256": "83821d6ad1ba5ba7f3fd8cd8bffd4832d44d2bebdf5357a0a0a9d119b7315751",
+      "split": "train",
+      "node_index": 17,
+      "distance_to_centroid": 5.659850120544434,
+      "native_xyxy": [
+        246,
+        463,
+        493,
+        695
+      ]
+    },
+    {
+      "cluster": 2,
+      "example": "C2_E08",
+      "selection": "central",
+      "patient_id": "31",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1319_N_17.png",
+      "source_sha256": "e36d9c796c10161471bcfda14b154eacddfb98f5d476ccd6d976f22d48686361",
+      "split": "train",
+      "node_index": 46,
+      "distance_to_centroid": 5.673304080963135,
+      "native_xyxy": [
+        1206,
+        1405,
+        1407,
+        1687
+      ]
+    },
+    {
+      "cluster": 2,
+      "example": "C2_E09",
+      "selection": "central",
+      "patient_id": "18",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1287_IC_5.png",
+      "source_sha256": "505efc7b89b55986e75a009ad0d8fbe3e4b65d3ae7c62c0aca52fbf12ed930cb",
+      "split": "train",
+      "node_index": 43,
+      "distance_to_centroid": 5.689799785614014,
+      "native_xyxy": [
+        1013,
+        928,
+        1351,
+        1115
+      ]
+    },
+    {
+      "cluster": 2,
+      "example": "C2_E10",
+      "selection": "central",
+      "patient_id": "104",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_747_IC_21.png",
+      "source_sha256": "91cb35a9930ce44d97c377c4962fb186c719d3c28c8eccc187c6bcb1b9073945",
+      "split": "train",
+      "node_index": 0,
+      "distance_to_centroid": 5.886756420135498,
+      "native_xyxy": [
+        0,
+        0,
+        340,
+        161
+      ]
+    },
+    {
+      "cluster": 2,
+      "example": "C2_E11",
+      "selection": "central",
+      "patient_id": "52",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1477_IC_5.png",
+      "source_sha256": "c98b99926deff49ba516cf0c835595b48ca720d531c310a54baee6d85ab84da9",
+      "split": "train",
+      "node_index": 14,
+      "distance_to_centroid": 6.002256393432617,
+      "native_xyxy": [
+        1107,
+        175,
+        1293,
+        352
+      ]
+    },
+    {
+      "cluster": 2,
+      "example": "C2_E12",
+      "selection": "central",
+      "patient_id": "114",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_297_N_20.png",
+      "source_sha256": "ac118e2093f3ca3139e582b32a5e87a1aa4f4ea5588991842d899ec721f67563",
+      "split": "train",
+      "node_index": 51,
+      "distance_to_centroid": 6.158679008483887,
+      "native_xyxy": [
+        238,
+        402,
+        318,
+        470
+      ]
+    },
+    {
+      "cluster": 2,
+      "example": "C2_E13",
+      "selection": "complementaire",
+      "patient_id": "123",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1882_N_4.png",
+      "source_sha256": "bd57cc24d343bbd9e614cb357a449893c2cb384dcc1eb63a5abe09b16dc00c06",
+      "split": "train",
+      "node_index": 6,
+      "distance_to_centroid": 10.910574913024902,
+      "native_xyxy": [
+        912,
+        0,
+        1064,
+        179
+      ]
+    },
+    {
+      "cluster": 2,
+      "example": "C2_E14",
+      "selection": "complementaire",
+      "patient_id": "69",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1636_IC_8.png",
+      "source_sha256": "3c21756c72a1380cf3ec0c04e6718aee964989f68a26f65775d30735e8a8685f",
+      "split": "train",
+      "node_index": 41,
+      "distance_to_centroid": 10.413481712341309,
+      "native_xyxy": [
+        76,
+        413,
+        153,
+        497
+      ]
+    },
+    {
+      "cluster": 2,
+      "example": "C2_E15",
+      "selection": "complementaire",
+      "patient_id": "184",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1003670_IC_1.png",
+      "source_sha256": "611fc65a1075a6e19aac7e584b339a869a3478eb6e79a86dcbbe593abaef1f4d",
+      "split": "train",
+      "node_index": 44,
+      "distance_to_centroid": 11.13864517211914,
+      "native_xyxy": [
+        620,
+        645,
+        776,
+        775
+      ]
+    },
+    {
+      "cluster": 2,
+      "example": "C2_E16",
+      "selection": "complementaire",
+      "patient_id": "44",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1622_N_3.png",
+      "source_sha256": "ac40ed2a976213810c05bf17ee08f98b06f317d4e31d262776d7ac222abe1180",
+      "split": "train",
+      "node_index": 63,
+      "distance_to_centroid": 8.420585632324219,
+      "native_xyxy": [
+        837,
+        920,
+        957,
+        1052
+      ]
+    },
+    {
+      "cluster": 3,
+      "example": "C3_E01",
+      "selection": "central",
+      "patient_id": "150",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1812_IC_4.png",
+      "source_sha256": "fb9bd2c168283dea1d79d36e90f89eaa9d05249ec7d6b234cdda9e031fc63c20",
+      "split": "train",
+      "node_index": 42,
+      "distance_to_centroid": 1.6173756122589111,
+      "native_xyxy": [
+        390,
+        1225,
+        586,
+        1470
+      ]
+    },
+    {
+      "cluster": 3,
+      "example": "C3_E02",
+      "selection": "central",
+      "patient_id": "18",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1287_IC_5.png",
+      "source_sha256": "505efc7b89b55986e75a009ad0d8fbe3e4b65d3ae7c62c0aca52fbf12ed930cb",
+      "split": "train",
+      "node_index": 11,
+      "distance_to_centroid": 2.302738666534424,
+      "native_xyxy": [
+        1013,
+        185,
+        1351,
+        372
+      ]
+    },
+    {
+      "cluster": 3,
+      "example": "C3_E03",
+      "selection": "central",
+      "patient_id": "52",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1477_IC_5.png",
+      "source_sha256": "c98b99926deff49ba516cf0c835595b48ca720d531c310a54baee6d85ab84da9",
+      "split": "train",
+      "node_index": 26,
+      "distance_to_centroid": 2.3961949348449707,
+      "native_xyxy": [
+        369,
+        527,
+        554,
+        704
+      ]
+    },
+    {
+      "cluster": 3,
+      "example": "C3_E04",
+      "selection": "central",
+      "patient_id": "141",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1231_IC_63.png",
+      "source_sha256": "6b4991b8d519adfb7d209fc99ad82296c487b104a72eacf076b82d304350affc",
+      "split": "train",
+      "node_index": 4,
+      "distance_to_centroid": 6.2879509925842285,
+      "native_xyxy": [
+        382,
+        0,
+        479,
+        83
+      ]
+    },
+    {
+      "cluster": 3,
+      "example": "C3_E05",
+      "selection": "central",
+      "patient_id": "142",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1003673_IC_1.png",
+      "source_sha256": "68ee80dcdb7ecaef18625e1e1078755549e87d47153e2cd7faf2c8771b9f0c4f",
+      "split": "train",
+      "node_index": 21,
+      "distance_to_centroid": 6.978219985961914,
+      "native_xyxy": [
+        449,
+        191,
+        540,
+        288
+      ]
+    },
+    {
+      "cluster": 3,
+      "example": "C3_E06",
+      "selection": "central",
+      "patient_id": "143",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1235_IC_18.png",
+      "source_sha256": "b7041f72718459ef6620d08d41716cf1a7b9b185978dc88b8522916a03e8b6db",
+      "split": "train",
+      "node_index": 42,
+      "distance_to_centroid": 8.396313667297363,
+      "native_xyxy": [
+        851,
+        1940,
+        1277,
+        2328
+      ]
+    },
+    {
+      "cluster": 4,
+      "example": "C4_E01",
+      "selection": "central",
+      "patient_id": "154",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1003677_IC_1.png",
+      "source_sha256": "83821d6ad1ba5ba7f3fd8cd8bffd4832d44d2bebdf5357a0a0a9d119b7315751",
+      "split": "train",
+      "node_index": 20,
+      "distance_to_centroid": 2.6922879219055176,
+      "native_xyxy": [
+        985,
+        463,
+        1232,
+        695
+      ]
+    },
+    {
+      "cluster": 4,
+      "example": "C4_E02",
+      "selection": "central",
+      "patient_id": "71",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1003727_IC_1.png",
+      "source_sha256": "c210040e73b937a90cf1523ae391bcd28f6ba279092b2131adb28d1f6af16b93",
+      "split": "train",
+      "node_index": 10,
+      "distance_to_centroid": 3.076216459274292,
+      "native_xyxy": [
+        286,
+        161,
+        429,
+        323
+      ]
+    },
+    {
+      "cluster": 4,
+      "example": "C4_E03",
+      "selection": "central",
+      "patient_id": "92",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1875_IC_10.png",
+      "source_sha256": "6aa7f5a97fd263f70be4a81bc8b07ff5fe6cceac7977aebb36d9a3cd59deb69e",
+      "split": "train",
+      "node_index": 48,
+      "distance_to_centroid": 3.5119869709014893,
+      "native_xyxy": [
+        0,
+        524,
+        103,
+        612
+      ]
+    },
+    {
+      "cluster": 4,
+      "example": "C4_E04",
+      "selection": "central",
+      "patient_id": "184",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1003670_IC_1.png",
+      "source_sha256": "611fc65a1075a6e19aac7e584b339a869a3478eb6e79a86dcbbe593abaef1f4d",
+      "split": "train",
+      "node_index": 22,
+      "distance_to_centroid": 4.060459613800049,
+      "native_xyxy": [
+        930,
+        258,
+        1086,
+        388
+      ]
+    },
+    {
+      "cluster": 4,
+      "example": "C4_E05",
+      "selection": "central",
+      "patient_id": "37",
+      "source_image": "data/raw/BRACS/RoI/val/6_IC/BRACS_1394_IC_3.png",
+      "source_sha256": "03775248ecb1604615c4c31937084e6c4b552001b9f717a3816d85d69a05863b",
+      "split": "train",
+      "node_index": 7,
+      "distance_to_centroid": 4.073542594909668,
+      "native_xyxy": [
+        2634,
+        0,
+        3011,
+        413
+      ]
+    },
+    {
+      "cluster": 4,
+      "example": "C4_E06",
+      "selection": "central",
+      "patient_id": "155",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1003684_IC_1.png",
+      "source_sha256": "f9772398f1ebf969275a9896cd749a57ef11152511b0a1b4bdc1a1df208a5793",
+      "split": "train",
+      "node_index": 20,
+      "distance_to_centroid": 4.347470760345459,
+      "native_xyxy": [
+        689,
+        374,
+        862,
+        563
+      ]
+    },
+    {
+      "cluster": 4,
+      "example": "C4_E07",
+      "selection": "central",
+      "patient_id": "11",
+      "source_image": "data/raw/BRACS/RoI/val/6_IC/BRACS_1362_IC_1.png",
+      "source_sha256": "a8abd2b1f81bf359a30cc5ac90399e9902c1e2832d61d705e43847c88de9ef8e",
+      "split": "train",
+      "node_index": 41,
+      "distance_to_centroid": 4.403906345367432,
+      "native_xyxy": [
+        529,
+        3166,
+        1059,
+        3801
+      ]
+    },
+    {
+      "cluster": 4,
+      "example": "C4_E08",
+      "selection": "central",
+      "patient_id": "142",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1003673_IC_1.png",
+      "source_sha256": "68ee80dcdb7ecaef18625e1e1078755549e87d47153e2cd7faf2c8771b9f0c4f",
+      "split": "train",
+      "node_index": 0,
+      "distance_to_centroid": 5.639765739440918,
+      "native_xyxy": [
+        0,
+        0,
+        90,
+        96
+      ]
+    },
+    {
+      "cluster": 4,
+      "example": "C4_E09",
+      "selection": "central",
+      "patient_id": "173",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1003675_N_1.png",
+      "source_sha256": "2d06cbc4e76bfebcfb44ad2ddbbbe9a3076a829cc7486ac68a8433a59af22964",
+      "split": "train",
+      "node_index": 27,
+      "distance_to_centroid": 6.2160515785217285,
+      "native_xyxy": [
+        865,
+        711,
+        1154,
+        949
+      ]
+    },
+    {
+      "cluster": 4,
+      "example": "C4_E10",
+      "selection": "central",
+      "patient_id": "44",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1622_N_3.png",
+      "source_sha256": "ac40ed2a976213810c05bf17ee08f98b06f317d4e31d262776d7ac222abe1180",
+      "split": "train",
+      "node_index": 17,
+      "distance_to_centroid": 7.931589126586914,
+      "native_xyxy": [
+        119,
+        263,
+        240,
+        395
+      ]
+    },
+    {
+      "cluster": 4,
+      "example": "C4_E11",
+      "selection": "central",
+      "patient_id": "63",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1604_N_3.png",
+      "source_sha256": "07e705f9b3dee0da34ed6ea2d680fd745401b985362c25a508a8edb185b7166f",
+      "split": "train",
+      "node_index": 32,
+      "distance_to_centroid": 8.224136352539062,
+      "native_xyxy": [
+        0,
+        842,
+        211,
+        1054
+      ]
+    },
+    {
+      "cluster": 4,
+      "example": "C4_E12",
+      "selection": "central",
+      "patient_id": "157",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1003709_IC_1.png",
+      "source_sha256": "afae77f6967fdefcdfde50203c6cf82283abf0119d6c49f78a5ec3408d921090",
+      "split": "train",
+      "node_index": 0,
+      "distance_to_centroid": 8.383623123168945,
+      "native_xyxy": [
+        0,
+        0,
+        346,
+        228
+      ]
+    },
+    {
+      "cluster": 4,
+      "example": "C4_E13",
+      "selection": "complementaire",
+      "patient_id": "69",
+      "source_image": "data/raw/BRACS/RoI/train/6_IC/BRACS_1636_IC_8.png",
+      "source_sha256": "3c21756c72a1380cf3ec0c04e6718aee964989f68a26f65775d30735e8a8685f",
+      "split": "train",
+      "node_index": 23,
+      "distance_to_centroid": 12.993964195251465,
+      "native_xyxy": [
+        534,
+        165,
+        611,
+        249
+      ]
+    },
+    {
+      "cluster": 4,
+      "example": "C4_E14",
+      "selection": "complementaire",
+      "patient_id": "187",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1003716_N_1.png",
+      "source_sha256": "9d59fb37de117b1e40fe750127687ae10dc202abfeb6c7822283237006eb8cfa",
+      "split": "train",
+      "node_index": 11,
+      "distance_to_centroid": 11.377552032470703,
+      "native_xyxy": [
+        340,
+        199,
+        454,
+        399
+      ]
+    },
+    {
+      "cluster": 4,
+      "example": "C4_E15",
+      "selection": "complementaire",
+      "patient_id": "70",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1645_N_1.png",
+      "source_sha256": "93623dbe0f628ef74ebc3b72cbdd979dc8137f8e6d65dd9439bd2928f827f86e",
+      "split": "train",
+      "node_index": 22,
+      "distance_to_centroid": 11.371651649475098,
+      "native_xyxy": [
+        524,
+        218,
+        612,
+        328
+      ]
+    },
+    {
+      "cluster": 4,
+      "example": "C4_E16",
+      "selection": "complementaire",
+      "patient_id": "31",
+      "source_image": "data/raw/BRACS/RoI/train/0_N/BRACS_1319_N_17.png",
+      "source_sha256": "e36d9c796c10161471bcfda14b154eacddfb98f5d476ccd6d976f22d48686361",
+      "split": "train",
+      "node_index": 49,
+      "distance_to_centroid": 11.70923137664795,
+      "native_xyxy": [
+        201,
+        1686,
+        402,
+        1968
+      ]
+    }
+  ],
+  "scope": "training-only semantic discovery, not independent validation"
+}

@@ -1,0 +1,62 @@
+{
+  "created_at": "2026-09-18T16:39:13.906177+00:00",
+  "scope": "real_data_acquisition_qc_only",
+  "regions": [
+    {
+      "roi_id": "TCGA-A1-A0SK-DX1",
+      "patient_id": "TCGA-A1-A0SK",
+      "image_size": [
+        1018,
+        740
+      ],
+      "mask_shape_native": [
+        2936,
+        4040
+      ],
+      "fractions_native_mask": {
+        "tumor": 0.46579529972752043,
+        "stroma": 0.2267963248981574,
+        "lymphocytic_infiltrate": 0.000673105457684733,
+        "necrosis_or_debris": 0.30180214206706774,
+        "fat": 0.004933127849569698
+      },
+      "ignored_codes": [
+        0,
+        7
+      ],
+      "status": "pass"
+    },
+    {
+      "roi_id": "TCGA-A1-A0SP-DX1",
+      "patient_id": "TCGA-A1-A0SP",
+      "image_size": [
+        1451,
+        1028
+      ],
+      "mask_shape_native": [
+        4078,
+        5758
+      ],
+      "fractions_native_mask": {
+        "tumor": 0.47372634291271576,
+        "stroma": 0.3728087718458452,
+        "lymphocytic_infiltrate": 0.07788447435480517,
+        "necrosis_or_debris": 0.06785556773176617,
+        "glandular_secretions": 0.001541791610997838,
+        "normal_acinus_or_duct": 0.004984344020328839,
+        "blood_vessel": 0.0011987075235410367
+      },
+      "ignored_codes": [
+        0,
+        7
+      ],
+      "status": "pass"
+    }
+  ],
+  "verified_files": 4,
+  "patient_count": 2,
+  "bytes": 6505975,
+  "model_trained": false,
+  "external_test_opened": false,
+  "limitation": "First metadata rows only; not representative and not a diagnostic cohort."
+}

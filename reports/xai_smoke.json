@@ -1,0 +1,20 @@
+{
+  "scope": "engineering_smoke_only_not_scientific_validation",
+  "independent_concept_annotations": false,
+  "audit": {
+    "concept": "synthetic_fixture",
+    "probe": {
+      "accuracy": 0.875,
+      "balanced_accuracy": 0.5,
+      "n_examples": 8
+    },
+    "target_probability_shift": 0.11492550373077393,
+    "control_probability_shifts": [
+      0.0,
+      0.01
+    ],
+    "validity_passed": false,
+    "specificity": 0.10992550373077392
+  },
+  "interpretation": "Synthetic fixture validates APIs; no biological or model-use claim."
+}
