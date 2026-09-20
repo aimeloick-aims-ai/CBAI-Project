@@ -1,3 +1,5 @@
+> **Etat actuel : [STATUS.md](../STATUS.md).** Les bilans dates ci-dessous sont historiques. Les demonstrations synthetiques ne constituent pas une validation BACH ou clinique.
+
 # Exécution du plan — 18 septembre 2026
 
 > Pilote BRACS binaire execute : [resultats](bracs_binary/RESULTS.md).

@@ -1,6 +1,8 @@
+> **Etat actuel : [STATUS.md](STATUS.md).** Les bilans dates ci-dessous sont historiques. Les demonstrations synthetiques ne constituent pas une validation BACH ou clinique.
+
 # GCIA — audit interventionnel de concepts histopathologiques
 
-Projet de Mahugnon Aime Loick Gohouede, préparé à partir de `Plan_scientifique_GCIA_histopathologie.docx`. Travail prospectif : aucun résultat clinique disponible. Les répertoires `src/` réservent la structure prévue ; ils ne constituent pas un pipeline d'entraînement implémenté.
+Projet de Mahugnon Aime Loick Gohouede, préparé à partir de `Plan_scientifique_GCIA_histopathologie.docx`. Les pipelines pilotes sont implémentés et ont produit des résultats exploratoires. Le protocole clinique complet reste à valider ; consulter [STATUS.md](STATUS.md) pour l'état actuel.
 
 ## Bilan du 18 septembre 2026
 

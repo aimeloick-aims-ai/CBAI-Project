@@ -4,6 +4,10 @@ tags: []
 
 ---
 
+> **Etat actuel : [STATUS.md](STATUS.md).** Les bilans dates ci-dessous sont historiques. Les demonstrations synthetiques ne constituent pas une validation BACH ou clinique.
+
+
+
 # Lire le code GCIA
 
 ## État vérifié

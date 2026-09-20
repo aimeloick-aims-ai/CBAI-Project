@@ -28,7 +28,6 @@ def sample_cell_graph():
 
 @pytest.fixture
 def trained_classifier(sample_cell_graph):
-    x, edge_index, batch = sample_cell_graph
     model = GraphClassifier("GCN", in_channels=8, hidden_channels=16, out_channels=2)
     model.eval()
     return model
@@ -48,7 +47,7 @@ def test_cell_gnn_explainer_masks(sample_cell_graph, trained_classifier):
 
 
 def test_concept_cell_aligner(sample_cell_graph):
-    x, edge_index, batch = sample_cell_graph
+    x, _edges, _batch = sample_cell_graph
     node_mask = torch.rand(x.shape[0])
     feature_names = [f"feat_{i}" for i in range(x.shape[1])]
 
@@ -56,7 +55,7 @@ def test_concept_cell_aligner(sample_cell_graph):
     corrs = aligner.compute_feature_correlations(node_mask, x)
 
     assert len(corrs) == x.shape[1]
-    for name, val in corrs.items():
+    for val in corrs.values():
         assert -1.0 <= val <= 1.0
 
 
@@ -75,11 +74,8 @@ def test_cell_graph_interventions(sample_cell_graph):
     )
     assert not (x_mean[nodes_to_ablate] == 0.0).any()
 
-    # Rewiring test
-    edge_index_rewired = CellGraphInterventions.rewire_edges(
-        edge_index, num_nodes=x.shape[0], rewire_ratio=0.5
-    )
-    assert edge_index_rewired.shape == edge_index.shape
+    with pytest.raises(NotImplementedError, match="rewiring is disabled"):
+        CellGraphInterventions.rewire_edges(edge_index, num_nodes=x.shape[0], rewire_ratio=0.5)
 
 
 def test_cell_intervention_fidelity(sample_cell_graph, trained_classifier):
@@ -95,3 +91,13 @@ def test_cell_intervention_fidelity(sample_cell_graph, trained_classifier):
     assert fid_res.fidelity_score == pytest.approx(
         fid_res.target_prob_drop - fid_res.control_prob_drop_mean
     )
+
+
+def test_official_explainer_preserves_parameters(sample_cell_graph, trained_classifier):
+    x, edges, batch = sample_cell_graph
+    before = {k: v.clone() for k, v in trained_classifier.state_dict().items()}
+    trained_classifier.train()
+    CellGNNExplainer(trained_classifier, epochs=2).explain_graph(x, edges, batch)
+    assert trained_classifier.training
+    assert all(torch.equal(before[k], v) for k, v in trained_classifier.state_dict().items())
+    assert all(p.grad is None for p in trained_classifier.parameters())

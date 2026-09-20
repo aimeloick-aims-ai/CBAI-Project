@@ -20,7 +20,7 @@ class ExplanationResult:
     node_mask: torch.Tensor
     edge_mask: torch.Tensor
     top_node_indices: torch.Tensor
-    loss: float
+    loss: float | None  # Official PyG does not expose the final optimization loss
 
 
 @dataclass
@@ -55,64 +55,49 @@ class CellGNNExplainer:
         batch: torch.Tensor | None = None,
         target_class: int | None = None,
     ) -> ExplanationResult:
-        """Find important nodes and edges for a given cell graph prediction."""
+        """Delegate masking to official PyG GNNExplainer; never update model weights."""
+        from torch_geometric.explain import Explainer, GNNExplainer
+
+        if self.epochs < 1:
+            raise ValueError("epochs must be positive")
         if batch is None:
-            batch = torch.zeros(x.shape[0], dtype=torch.long, device=x.device)
-
+            batch = torch.zeros(len(x), dtype=torch.long, device=x.device)
+        if batch.unique().numel() != 1:
+            raise ValueError("Explain one graph at a time")
+        was_training = self.model.training
+        parameters = list(self.model.parameters())
+        requires_grad = [p.requires_grad for p in parameters]
         self.model.eval()
-
-        with torch.no_grad():
-            orig_out = self.model(x, edge_index, batch)
-            if target_class is None:
-                target_class = int(orig_out.argmax(dim=-1).item())
-
-        num_nodes, num_edges = x.shape[0], edge_index.shape[1]
-
-        # Learnable masks initialized near 1
-        node_mask_param = nn.Parameter(torch.randn(num_nodes, device=x.device) * 0.1 + 1.0)
-        edge_mask_param = nn.Parameter(torch.randn(num_edges, device=x.device) * 0.1 + 1.0)
-
-        optimizer = torch.optim.Adam([node_mask_param, edge_mask_param], lr=self.learning_rate)
-        criterion = nn.CrossEntropyLoss()
-
-        target_tensor = torch.tensor([target_class], device=x.device)
-
-        for _ in range(self.epochs):
-            optimizer.zero_grad()
-
-            node_mask = torch.sigmoid(node_mask_param)
-            edge_mask = torch.sigmoid(edge_mask_param)
-
-            # Apply node mask
-            masked_x = x * node_mask.unsqueeze(-1)
-
-            out = self.model(masked_x, edge_index, batch)
-            pred_loss = criterion(out, target_tensor)
-
-            # Size and entropy regularization
-            size_loss = (
-                self.edge_size_reg * edge_mask.mean() + self.edge_size_reg * node_mask.mean()
+        for p in parameters:
+            p.requires_grad_(False)
+        try:
+            explainer = Explainer(
+                model=self.model,
+                algorithm=GNNExplainer(
+                    epochs=self.epochs,
+                    lr=self.learning_rate,
+                    edge_size=self.edge_size_reg,
+                    edge_ent=self.edge_ent_reg,
+                ),
+                explanation_type="model" if target_class is None else "phenomenon",
+                node_mask_type="object",
+                edge_mask_type="object",
+                model_config={
+                    "mode": "multiclass_classification",
+                    "task_level": "graph",
+                    "return_type": "raw",
+                },
             )
-            ent_loss = -self.edge_ent_reg * (
-                (edge_mask * torch.log(edge_mask + 1e-8)).mean()
-                + (node_mask * torch.log(node_mask + 1e-8)).mean()
+            target = None if target_class is None else torch.tensor([target_class], device=x.device)
+            result = explainer(x, edge_index, target=target, batch=batch)
+            nodes = result.node_mask.detach().flatten()
+            return ExplanationResult(
+                nodes, result.edge_mask.detach(), torch.argsort(nodes, descending=True), None
             )
-
-            total_loss = pred_loss + size_loss + ent_loss
-            total_loss.backward()
-            optimizer.step()
-
-        node_mask = torch.sigmoid(node_mask_param).detach()
-        edge_mask = torch.sigmoid(edge_mask_param).detach()
-
-        top_indices = torch.argsort(node_mask, descending=True)
-
-        return ExplanationResult(
-            node_mask=node_mask,
-            edge_mask=edge_mask,
-            top_node_indices=top_indices,
-            loss=float(total_loss.item()),
-        )
+        finally:
+            for p, flag in zip(parameters, requires_grad, strict=True):
+                p.requires_grad_(flag)
+            self.model.train(was_training)
 
 
 class ConceptCellAligner:
@@ -183,23 +168,11 @@ class CellGraphInterventions:
         rewire_ratio: float = 0.2,
         seed: int = 42,
     ) -> torch.Tensor:
-        """Randomly rewire a fraction of cell-cell spatial connections to test topological causality."""
-        g = torch.Generator().manual_seed(seed)
-        num_edges = edge_index.shape[1]
-        num_rewire = int(num_edges * rewire_ratio)
-
-        if num_rewire == 0:
-            return edge_index.clone()
-
-        rewire_indices = torch.randperm(num_edges, generator=g)[:num_rewire]
-        edge_index_perturbed = edge_index.clone()
-
-        new_targets = torch.randint(
-            0, num_nodes, (num_rewire,), generator=g, device=edge_index.device
+        """Reject the legacy unconstrained rewiring, which was not spatially valid."""
+        raise NotImplementedError(
+            "Unconstrained rewiring is disabled. Use the recorded boundary-removal audit; "
+            "degree/distance/connectivity-preserving rewiring requires a separate validated protocol."
         )
-        edge_index_perturbed[1, rewire_indices] = new_targets
-
-        return edge_index_perturbed
 
     @staticmethod
     @torch.no_grad()

@@ -1,5 +1,6 @@
 """Unit tests for probe robustness and statistical controls (Axe 2)."""
 
+import pytest
 import torch
 
 from src.concepts.probes import LinearConceptProbe
@@ -20,7 +21,16 @@ def test_null_probe_evaluator():
     labels = torch.cat([torch.ones(50), torch.zeros(50)], dim=0)
 
     evaluator = NullProbeEvaluator(num_permutations=5, steps=50)
-    result = evaluator.evaluate(embeddings, labels)
+    train = torch.cat([torch.arange(40), torch.arange(50, 90)])
+    test = torch.cat([torch.arange(40, 50), torch.arange(90, 100)])
+    result = evaluator.evaluate(
+        embeddings[train],
+        labels[train],
+        embeddings[test],
+        labels[test],
+        train_patients=[str(i) for i in train.tolist()],
+        test_patients=[str(i) for i in test.tolist()],
+    )
 
     assert result.true_accuracy >= 0.8
     assert result.null_accuracy_mean < result.true_accuracy
@@ -55,3 +65,23 @@ def test_probe_stability_evaluator():
 
     result = ProbeStabilityEvaluator.evaluate([p1, p2])
     assert result.mean_cosine_similarity > 0.99
+
+
+def test_probe_rejects_resubstitution_and_patient_leakage():
+    x = torch.randn(4, 2)
+    y = torch.tensor([0.0, 1.0, 0.0, 1.0])
+    evaluator = NullProbeEvaluator(num_permutations=1, steps=1)
+    with pytest.raises(ValueError, match="held-out"):
+        evaluator.evaluate(x, y)
+    with pytest.raises(ValueError, match="leakage"):
+        evaluator.evaluate(
+            x, y, x.clone(), y.clone(), train_patients=list("abcd"), test_patients=list("defg")
+        )
+
+
+def test_opposite_probe_directions_remain_negative():
+    a, b = LinearConceptProbe(2), LinearConceptProbe(2)
+    with torch.no_grad():
+        a.classifier.weight.fill_(1)
+        b.classifier.weight.fill_(-1)
+    assert ProbeStabilityEvaluator.evaluate([a, b]).mean_cosine_similarity < -0.99

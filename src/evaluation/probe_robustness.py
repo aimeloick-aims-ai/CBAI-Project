@@ -53,12 +53,28 @@ class NullProbeEvaluator:
         labels: torch.Tensor,
         test_embeddings: torch.Tensor | None = None,
         test_labels: torch.Tensor | None = None,
+        *,
+        train_patients: list[str] | None = None,
+        test_patients: list[str] | None = None,
     ) -> NullProbeResult:
-        if test_embeddings is None:
-            test_embeddings = embeddings
-        if test_labels is None:
-            test_labels = labels
+        if test_embeddings is None or test_labels is None:
+            raise ValueError("Explicit held-out embeddings and labels are required")
+        if test_embeddings.data_ptr() == embeddings.data_ptr():
+            raise ValueError("Training embeddings cannot be the evaluation set")
+        if self.num_permutations < 1:
+            raise ValueError("At least one permutation is required")
 
+        if train_patients is None or test_patients is None:
+            raise ValueError("Patient identifiers required for disjoint patient-level evaluation")
+        if len(train_patients) != len(embeddings) or len(test_patients) != len(test_embeddings):
+            raise ValueError("Patient identifiers must align with rows")
+        if len(set(train_patients)) != len(train_patients) or len(set(test_patients)) != len(
+            test_patients
+        ):
+            raise ValueError("Provide one aggregated representation and concept label per patient")
+        if set(train_patients) & set(test_patients):
+            raise ValueError("Patient leakage between training and evaluation")
+        # Rows are now independent patient units; labels are shuffled at that level.
         # Fit ground truth probe
         true_probe = fit_binary_probe(embeddings, labels, steps=self.steps, learning_rate=self.lr)
         true_res = evaluate_binary_probe(true_probe, test_embeddings, test_labels)
@@ -160,9 +176,7 @@ class ProbeStabilityEvaluator:
     @staticmethod
     def evaluate(probes: list[LinearConceptProbe]) -> ProbeStabilityResult:
         if len(probes) < 2:
-            return ProbeStabilityResult(
-                mean_cosine_similarity=1.0, std_cosine_similarity=0.0, pairwise_similarities=[1.0]
-            )
+            raise ValueError("At least two probes are required to measure stability")
 
         weights = []
         for p in probes:
@@ -183,7 +197,7 @@ class ProbeStabilityEvaluator:
                     sim = float((w1 @ w2) / (norm1 * norm2))
                 else:
                     sim = 0.0
-                similarities.append(abs(sim))
+                similarities.append(sim)
 
         return ProbeStabilityResult(
             mean_cosine_similarity=float(np.mean(similarities)),
