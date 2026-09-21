@@ -1,5 +1,0 @@
-case_id,target_class,target_prob_drop,control_prob_drop_mean,fidelity_score,topological_edge_drop,probe_specificity_score,review_sheet_path
-cell_case_01,0,-0.0037186741828918457,-0.0004794001579284668,-0.003239274024963379,-0.004496276378631592,-0.035619473457336424,reports\cell_gcia_master\pathologist_dossiers\review_cell_case_01.html
-cell_case_02,1,0.005088090896606445,-0.0018879591953009367,0.006976050091907382,-0.0029540956020355225,0.013073658943176268,reports\cell_gcia_master\pathologist_dossiers\review_cell_case_02.html
-cell_case_03,0,0.008676290512084961,-0.005993306636810303,0.014669597148895264,-0.004648864269256592,-0.01617884635925293,reports\cell_gcia_master\pathologist_dossiers\review_cell_case_03.html
-cell_case_04,1,-0.0020835399627685547,-0.0026886642444878817,0.000605124281719327,-0.011174947023391724,0.005388104915618898,reports\cell_gcia_master\pathologist_dossiers\review_cell_case_04.html

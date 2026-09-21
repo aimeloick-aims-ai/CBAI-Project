@@ -1,0 +1,52 @@
+study: minimal_functional_reliance
+seeds: [11, 23, 37]
+models: [DeepSets, GraphSAGE]
+hidden: 32
+layers: 3
+learning_rate: 0.003
+weight_decay: 0.0001
+epochs: 160
+threads: 2
+batch_size: 64
+probe:
+  binary_threshold: 0.8
+  continuous_threshold: 0.2
+  logistic_c: 1.0
+  ridge_alpha: 1.0
+  max_iter: 2000
+  permutations: 99
+  permutation_null: independent grouped label permutations in train and held-out partitions
+  alpha: 0.05
+matched_controls: 8
+equivalence_margin: 0.03
+bootstrap_repetitions: 2000
+confidence: 0.95
+numerical_tolerance: 0.000001
+control_attempts: 5000
+synthetic:
+  concepts: [C_used, C_unused, C_relational]
+  split_repetitions: {train: 64, validation: 16, test: 32}
+  split_seeds: {train: 401, validation: 402, test: 403}
+  feature_noise: 0.25
+  label_flip_probability: 0.1
+  feature_strength: 2.0
+  relational_strength: 1.0
+  label_rule: 'binary OR: y_clean = C_used OR C_relational; C_unused is absent'
+bracs:
+  concepts: [nuclear_area_pixels]
+  manifest: ../GCIA_archive/legacy/reports/cell_cohort/manifest.csv
+  source_manifest: ../GCIA_archive/legacy/data/bracs_expanded_study_manifest.csv
+  patient_metadata: ../GCIA_archive/legacy/data/bracs_slide_metadata.csv
+  cohort_protocol: ../GCIA_archive/legacy/reports/cell_cohort/protocol.json
+  excluded: ../GCIA_archive/legacy/reports/cell_cohort/excluded.csv
+  feature_index: 0
+  feature_strength: 0.1
+  control_mean_shift_ratio: 0.35
+  confirmatory: false
+  missing_evidence:
+    - 'BLOCKED: requires independent concept annotations (Concept 2)'
+    - 'BLOCKED: requires independent concept annotations and cell/compartment labels (Concept 3)'
+    - Validated physical scale / MPP
+    - Independent BRACS segmentation validation
+    - Untouched formally locked confirmatory test set
+    - Biological plausibility of edited feature vectors

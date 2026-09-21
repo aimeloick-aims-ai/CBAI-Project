@@ -1,7 +1,0 @@
-{
-  "source_url": "https://huggingface.co/TIACentre/TIAToolbox_pretrained_weights/resolve/ea909bdcce3aa409bf436c09b4495cca90a8e99b/mobilenet_v3_small-pcam.pth",
-  "sha256": "bd1fad9a7ff4d31d9e9bf04452cf03ccd689ed4ee3a7aea48c70ba326a32fa1f",
-  "bytes": 3833181,
-  "acquired_at": "2026-09-18T23:47:01.135598+00:00",
-  "checksum_kind": "locally_computed_not_provider_digest"
-}

@@ -1,0 +1,839 @@
+{
+  "stages": {
+    "synthetic": {
+      "generator_ground_truth": "binary OR: y_clean = C_used OR C_relational; C_unused is absent",
+      "expected_before_training": {
+        "C_used": "encoded and used",
+        "C_unused": "encoded but not in label rule",
+        "C_relational": "GraphSAGE can use relations; DeepSets cannot"
+      },
+      "independence_unit": "replicate, not factorial variant",
+      "physical_scale_known": false,
+      "split_identifiers": {
+        "train": [
+          "train_0",
+          "train_1",
+          "train_10",
+          "train_11",
+          "train_12",
+          "train_13",
+          "train_14",
+          "train_15",
+          "train_16",
+          "train_17",
+          "train_18",
+          "train_19",
+          "train_2",
+          "train_20",
+          "train_21",
+          "train_22",
+          "train_23",
+          "train_24",
+          "train_25",
+          "train_26",
+          "train_27",
+          "train_28",
+          "train_29",
+          "train_3",
+          "train_30",
+          "train_31",
+          "train_32",
+          "train_33",
+          "train_34",
+          "train_35",
+          "train_36",
+          "train_37",
+          "train_38",
+          "train_39",
+          "train_4",
+          "train_40",
+          "train_41",
+          "train_42",
+          "train_43",
+          "train_44",
+          "train_45",
+          "train_46",
+          "train_47",
+          "train_48",
+          "train_49",
+          "train_5",
+          "train_50",
+          "train_51",
+          "train_52",
+          "train_53",
+          "train_54",
+          "train_55",
+          "train_56",
+          "train_57",
+          "train_58",
+          "train_59",
+          "train_6",
+          "train_60",
+          "train_61",
+          "train_62",
+          "train_63",
+          "train_7",
+          "train_8",
+          "train_9"
+        ],
+        "validation": [
+          "validation_0",
+          "validation_1",
+          "validation_10",
+          "validation_11",
+          "validation_12",
+          "validation_13",
+          "validation_14",
+          "validation_15",
+          "validation_2",
+          "validation_3",
+          "validation_4",
+          "validation_5",
+          "validation_6",
+          "validation_7",
+          "validation_8",
+          "validation_9"
+        ],
+        "test": [
+          "test_0",
+          "test_1",
+          "test_10",
+          "test_11",
+          "test_12",
+          "test_13",
+          "test_14",
+          "test_15",
+          "test_16",
+          "test_17",
+          "test_18",
+          "test_19",
+          "test_2",
+          "test_20",
+          "test_21",
+          "test_22",
+          "test_23",
+          "test_24",
+          "test_25",
+          "test_26",
+          "test_27",
+          "test_28",
+          "test_29",
+          "test_3",
+          "test_30",
+          "test_31",
+          "test_4",
+          "test_5",
+          "test_6",
+          "test_7",
+          "test_8",
+          "test_9"
+        ]
+      },
+      "data_tensor_sha256": {
+        "train": "8eb34b21d64f160a4a2ae60b31e1e72608ec263254d76a49198a3d42de1b1df6",
+        "validation": "9c336f02ffb7d919cae196e15ac5f4a2a0fcfb30f2acd5e30d22f8c884df37e7",
+        "test": "73021a61f89f4b0f3b9e2dfdd58d75060213dbd6b951826a52a6f9cce84fd49e"
+      },
+      "models": {
+        "DeepSets_11": {
+          "selected_epoch": 139,
+          "weights_sha256": "d1eebe6391750444a075d57748287f47850bdf3bb657f34916bbf4ed88c416c5",
+          "selection": "lowest validation cross entropy; test not used for selection"
+        },
+        "DeepSets_23": {
+          "selected_epoch": 35,
+          "weights_sha256": "74cec8eb269fa0f29c4f6e42ba10d141f4010bee1aa663ccb43ea34c4cd3a487",
+          "selection": "lowest validation cross entropy; test not used for selection"
+        },
+        "DeepSets_37": {
+          "selected_epoch": 26,
+          "weights_sha256": "2e8354244475d4ca64dffec11c988f18038e092f7d47d7991d9581cf7ffee5b5",
+          "selection": "lowest validation cross entropy; test not used for selection"
+        },
+        "GraphSAGE_11": {
+          "selected_epoch": 104,
+          "weights_sha256": "0e4d5fff0d9c7488d6315005d1c83ef125ccb263c40b4be129f6e6775073d65a",
+          "selection": "lowest validation cross entropy; test not used for selection"
+        },
+        "GraphSAGE_23": {
+          "selected_epoch": 92,
+          "weights_sha256": "fca517ec8c2707f609c7ba72b50290f7dbbc44920edd83a0f6a4458f84495e3b",
+          "selection": "lowest validation cross entropy; test not used for selection"
+        },
+        "GraphSAGE_37": {
+          "selected_epoch": 45,
+          "weights_sha256": "c44c7226c6dd30f033e4a151a1cad099d3fb19646d989b627c2304fbe29718be",
+          "selection": "lowest validation cross entropy; test not used for selection"
+        }
+      },
+      "train_feature_mean": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "train_feature_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "split_sizes": {
+        "train": 512,
+        "validation": 128,
+        "test": 256
+      },
+      "timestamp_utc": "2026-09-21T16:33:06.732771+00:00",
+      "source_hashes": {
+        "src\\evaluation.py": "0ec3c6ed43215a9170db7eab0ade332274cb76a44ec0d76b1189de50c76dc5cc",
+        "src\\graph.py": "0ef0dc734610088f5f711c49d84cc9e683026dcf0600076e73c5a73f25507779",
+        "src\\interventions.py": "d9081fed4c16663f6ecedb7cf6dd12b44ba92ee5b8e5ca70e662680b4181b752",
+        "src\\models.py": "97ed23e1b2e2b07754516a5afc11fbcd35165bdcfb659e8b48667ed7a33b8fd9",
+        "src\\probes.py": "7befad15be048b36719bf7389947b5cc7f50510a8610ad49d0849b6bc9917a4c",
+        "src\\tcav.py": "b7096a5baac2b836d7e73b768cc1f2c956019be3bc4df32f27e0bc49e784e52f",
+        "experiments\\synthetic\\run.py": "e5fb2d17af43a66062b1dc3920d9cda6c37ec434917ed514e0f2d17a41e6205f",
+        "experiments\\bracs\\run.py": "f335bc74280d8b75689e5de5c9a0250a7bae5e6bfab172972fb23cd3be3fb2a0",
+        "configs\\study.yaml": "a1fd2b62dc2bc2760068d46de3a62b52e48852df45162c2b9cda8e5be2472a55",
+        "tests\\test_gcia.py": "47b3c68ee2b1b9efc0750b8a5781678569213e2689649d37ad6098b751e36fa4"
+      },
+      "config": {
+        "study": "minimal_functional_reliance",
+        "seeds": [
+          11,
+          23,
+          37
+        ],
+        "models": [
+          "DeepSets",
+          "GraphSAGE"
+        ],
+        "hidden": 32,
+        "layers": 3,
+        "learning_rate": 0.003,
+        "weight_decay": 0.0001,
+        "epochs": 160,
+        "threads": 2,
+        "batch_size": 64,
+        "probe": {
+          "binary_threshold": 0.8,
+          "continuous_threshold": 0.2,
+          "logistic_c": 1.0,
+          "ridge_alpha": 1.0,
+          "max_iter": 2000,
+          "permutations": 99,
+          "permutation_null": "independent grouped label permutations in train and held-out partitions",
+          "alpha": 0.05
+        },
+        "matched_controls": 8,
+        "equivalence_margin": 0.03,
+        "bootstrap_repetitions": 2000,
+        "confidence": 0.95,
+        "numerical_tolerance": 1e-06,
+        "control_attempts": 5000,
+        "synthetic": {
+          "concepts": [
+            "C_used",
+            "C_unused",
+            "C_relational"
+          ],
+          "split_repetitions": {
+            "train": 64,
+            "validation": 16,
+            "test": 32
+          },
+          "split_seeds": {
+            "train": 401,
+            "validation": 402,
+            "test": 403
+          },
+          "feature_noise": 0.25,
+          "label_flip_probability": 0.1,
+          "feature_strength": 2.0,
+          "relational_strength": 1.0,
+          "label_rule": "binary OR: y_clean = C_used OR C_relational; C_unused is absent"
+        },
+        "bracs": {
+          "concepts": [
+            "nuclear_area_pixels"
+          ],
+          "manifest": "../GCIA_archive/legacy/reports/cell_cohort/manifest.csv",
+          "source_manifest": "../GCIA_archive/legacy/data/bracs_expanded_study_manifest.csv",
+          "patient_metadata": "../GCIA_archive/legacy/data/bracs_slide_metadata.csv",
+          "cohort_protocol": "../GCIA_archive/legacy/reports/cell_cohort/protocol.json",
+          "excluded": "../GCIA_archive/legacy/reports/cell_cohort/excluded.csv",
+          "feature_index": 0,
+          "feature_strength": 0.1,
+          "control_mean_shift_ratio": 0.35,
+          "confirmatory": false,
+          "missing_evidence": [
+            "BLOCKED: requires independent concept annotations (Concept 2)",
+            "BLOCKED: requires independent concept annotations and cell/compartment labels (Concept 3)",
+            "Validated physical scale / MPP",
+            "Independent BRACS segmentation validation",
+            "Untouched formally locked confirmatory test set",
+            "Biological plausibility of edited feature vectors"
+          ]
+        }
+      },
+      "status": "completed"
+    },
+    "bracs": {
+      "files_sha256": {
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\manifest.csv": "0ea4af60efb31dfbdd6a68893e33bb37a30a9f725a26bcfa1c42866b1f498121",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\data\\bracs_expanded_study_manifest.csv": "144f7330dd161a6e7c5645419a28bfbdfc835aa9d4cda5de55e73108c52d34ea",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\data\\bracs_slide_metadata.csv": "6ad6da1fd528e7402086c674fb68ff00a16b0c0f4f30c90b85f7433becaff7bc",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\protocol.json": "2b1ede4a851380a9143cf0c901e8e2c410a6943604fe859a7310d23d083d2740",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\excluded.csv": "d9e57948de98507f6b7392700018195bf6c93276b416a8ef2598222159261150",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\101.pt": "5de285a7f7c4e62dbcda92423939543592088faa05080e1a1e053feadea59a6f",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\102.pt": "75a9fbae8730cbe62f1d613868a4c35a414ae6b9b6c1ec4b7754109ffd9e1eb6",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\104.pt": "d8bbcaa7422e5c44207e734478af153f343c9654b35dc5cd4197bd92592cd797",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\105.pt": "9f04816fc52d91b12d82951732f37ec64942995557ad518d534d75a2eacfa6d5",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\106.pt": "57ddbec203b1b752218eb2455ff7a2c47eb80df83118446d619e0b11be48780d",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\109.pt": "249a5d9c8621ffa4084dc5b6da6829adb2a41b9ad6fc98585efb80b8189096ed",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\11.pt": "ef8c625f15b6bb90dec660fff2b949fcf4633076544013e4428919639b89854e",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\111.pt": "8151b91f861f91ff32c0177c0a096b87b107d49c619918d18794dc3a420f2339",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\114.pt": "cbeb34c72a733bdf854e6b0a953eb41d68fb4b4876006f99c50ceea531592bb1",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\118.pt": "f420a10f75ae76cfcf6ec7042f7d06ff6dc50a9b4e4526d443abfe2d49e84bea",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\12.pt": "e36ed069c4b612d291f69d940b338727d7081c2eb2641c87c4d1032191e7ed61",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\120.pt": "cf7bb46fde2f5df199b7914c6cee1ac9257c00d661a7151e3fa8eb62ceba0848",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\121.pt": "0b83496bc8dd25ec2c7b1d0e2c639aefe810266042f1ada257198b267b2ec8f0",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\123.pt": "ec2b21b61524896ae9f408efd569a22e99c29405a2cbf2c6235275c0b1f84d2d",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\124.pt": "d352da4950a94961ebb964d5662d695a9c7ba24a215b97ebc305b5046cba2f3a",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\125.pt": "4e1c4b4ccef30976ee260e9146ca9a9dd7ec8d2302f4bfa075a8f450ce808844",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\132.pt": "05d2d731bc058194a4f46d1526184714e72825daf220bcb5abf7cf9bbf9fc2dd",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\14.pt": "c8718f4aed58cd0577e9db5a6e16e64d3b9ca9acd3873010a3340b0d319c1efc",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\141.pt": "ed427bca1e37227ecb41d0cfa17675a2675debb5deec08c891e4e40844f144a3",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\142.pt": "b68b1c48f3d96fdc601c0882c0d60bbfad97e2b3fd0f03565d9095216069a661",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\143.pt": "cb3f3545b86a5738e9fdd6edac9ed5a1c731abaa9ca529d36312cbaab6a9d8cc",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\144.pt": "3767249941dfdff56509bdc9dc22a9d0716d7993eac3caf5cda4893efa93e47e",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\150.pt": "4885355774499b59f88bd8b2aaac5e8ac665d0ee7fad80432e57673a1230bec4",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\151.pt": "6fd36953afcb77adb7ead802d93cd419c605c45a304a6eb6f179e4abd28c85e4",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\154.pt": "a76d0090e2d711c59cce73ca20455fac4469b9890d1166b130fb6047c2030648",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\155.pt": "954fc27df93d242b5bb67062e0b5e0f381b36702ddb1d4884429fa9b376ee46d",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\156.pt": "41558042d36aab03ea9883543241d9edd17c7318fd293e0ceda550d27890f2d0",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\157.pt": "b8ea68f486a627a7dff28933d73933911956d92cf87d4662d3188781dca0850e",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\162.pt": "04a378bd2c89fe0f39443ec0dbb1f8308b108e4b8b5594eb179789355dc0cda1",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\173.pt": "6c3333b7adf7edf6d7d54fd7cbb01151f29e74c47d56455c9372100bbd415590",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\174.pt": "52abfb2bd961d681a2fee1369d564a6a542565c9164e9c013d29f9975db99fdd",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\178.pt": "03640467d7526fc3323c7a608e75a28685010822683fbdb4081de387692d81b9",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\179.pt": "da5955ca495997c14086940e3c952b7848e21b7f45e55dbc08aabf351875043d",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\18.pt": "b8c93f471940316802f2161dd74b48b7be6ec2402adef7d4cd62d710cec9a654",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\181.pt": "68ccd1425672b4a4d0830a60609ea7f04dbd36a7f25176f14aa1405280dd7592",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\184.pt": "f69205764ece8bc2ed33f5d1b620a6006ad590e05c7be1fa349c4807243ba888",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\187.pt": "31b4aea6f3c809b718936fac8956dba980c1ed161dfe6110d54406982f8909e8",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\188.pt": "5e656219b5c61557537687d2519505a4225a5c9c6aa2dca90f0fcb5d9b198e6b",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\19.pt": "a7a7bafab2a0428c2047237e2d9cacc1296f20bc4225921e2806e1c156b2bd17",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\22.pt": "c588c81325c6ee3c8edbb790562e334dc650a9bd17965795b48816d617baae02",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\24.pt": "d2cd3f52346b60ea81ba4d99691faa2995be5089c3c596324c15e94904a0cab8",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\3.pt": "49ed3ae3cc66fe260551362859151367141a7d5a1caa306b88ce97f43027cfde",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\31.pt": "405914867164f45bdb95b3dc3df56b1b89d2e9a72debce6407c8410bd98f4edb",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\33.pt": "9cdbe795424373f17392c0778d2452e24dfca3c0623b11175e02f97ec6d6334a",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\37.pt": "0ed1788c15ae01b1a7deabe7dcc9e880471151b24e1ed5e2a05ff7a47906960f",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\44.pt": "504d5db7dc460dd6db489856ab34910aba7cfdbdfde806ce75b487626c802c27",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\47.pt": "f06b1a9b4232e1e3f76f1981ce6b02d7f70bd354284add3689bcc07794320ccc",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\48.pt": "7fd5f691065057b60dfc95c67bc71203ca6f2726b736515efd4cc79b15f6ec6b",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\51.pt": "9de7c52cc2ffcb8fd6cd7022726e958eaa4987d06c0886a28aa9bfec4d7787b8",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\52.pt": "d98a63a393956014d602972ee27e3d864867427ee08a6ecef6f7c193454c7354",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\54.pt": "2a8b81b469ed41e4636c05c0536ef693405fa4e2353f7e2a844f79ae0a77fad8",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\56.pt": "59e41043e860d460d4badd488af4b9279f0a77e06cc101fcd45a768598496a72",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\58.pt": "e9ff51cdb6a17354d6ce982bd8b2697caade46070d011c9f252d8d9f0960a75b",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\59.pt": "96d3a02de58d8fe38d3dde0d2967fc83e5d31b5024749060ec1f656d1566b7be",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\63.pt": "b045cc227b2a56f4d754466e92906a2d718269c5b8a940a1634392e3b7a16da5",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\67.pt": "4f1f4a9591c0f32f0289f1b766893a072b4a18e491bf1053918eada47922222b",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\69.pt": "06a6f2ff4e9e8292ddc34afb1723665848a5be4f4940642711f30f875e9d1422",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\7.pt": "fff8dbd1e4d63ceaf7fee4b2cf897f1b88059fbe7aac5d340e5e1396ff824b92",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\70.pt": "b8f7125f5138a7d3c56f1472d9ef357a8506fa65798790cf73087646d6ef8d1a",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\71.pt": "121c4559b13705ed159b149a7dc30ac09a962e211a9f9ca4045805cd7b0d1c6d",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\84.pt": "73103e6b31988ce04656130eab1895bbb3b36345d20f2792947bcd18d12660db",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\87.pt": "8e99a88e6dc631abb6ecf4a3d15fddc930b5fb6dadaff98edf75905084bd1206",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\9.pt": "31a08a160917d5b225c577f54692e6018004ab70075cfd8a755a6378825860c2",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\92.pt": "b057497ae047c2a146bbc2533ed0c0b59b2aa6551a201f6a44ba59b00d2681bb",
+        "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy\\reports\\cell_cohort\\97.pt": "1343208ba17cac4e5860a56a2f685239f817a6fa812ac6c04185053866e396f6"
+      },
+      "coordinate_units": [
+        "pixels"
+      ],
+      "physical_scale_validated": false,
+      "segmentation_validated": false,
+      "patients": {
+        "train": [
+          "104",
+          "11",
+          "111",
+          "114",
+          "12",
+          "121",
+          "123",
+          "141",
+          "142",
+          "143",
+          "150",
+          "154",
+          "155",
+          "157",
+          "173",
+          "174",
+          "18",
+          "181",
+          "184",
+          "187",
+          "3",
+          "31",
+          "37",
+          "44",
+          "47",
+          "51",
+          "52",
+          "63",
+          "69",
+          "70",
+          "71",
+          "92",
+          "97"
+        ],
+        "validation": [
+          "105",
+          "109",
+          "125",
+          "14",
+          "188",
+          "19",
+          "24",
+          "48",
+          "67",
+          "84"
+        ],
+        "test": [
+          "101",
+          "102",
+          "106",
+          "118",
+          "120",
+          "124",
+          "132",
+          "144",
+          "151",
+          "156",
+          "162",
+          "178",
+          "179",
+          "22",
+          "33",
+          "54",
+          "56",
+          "58",
+          "59",
+          "7",
+          "87",
+          "9"
+        ]
+      },
+      "excluded": [
+        {
+          "patient_id": "20",
+          "split": "train",
+          "label": "N",
+          "reason": "fewer_than_two_retained_nuclei"
+        }
+      ],
+      "concept_scope": "mean segmented nuclear area in pixels squared; technical positive control",
+      "scope": "development/exploratory; historical test already explored",
+      "unavailable_concepts": [
+        "BLOCKED: requires independent concept annotations (Concept 2)",
+        "BLOCKED: requires independent concept annotations and cell/compartment labels (Concept 3)",
+        "Validated physical scale / MPP",
+        "Independent BRACS segmentation validation",
+        "Untouched formally locked confirmatory test set",
+        "Biological plausibility of edited feature vectors"
+      ],
+      "models": {
+        "DeepSets_11": {
+          "selected_epoch": 75,
+          "weights_sha256": "97a3f8a86e2b4de19bfca97468034e89cc45e680dc4200aef74823911da320a8",
+          "selection": "lowest validation cross entropy; test not used for selection"
+        },
+        "DeepSets_23": {
+          "selected_epoch": 54,
+          "weights_sha256": "c0bfa405c6ab0d817bb862573de3ef479d03d0ab18019e03b6635fea4e21ee45",
+          "selection": "lowest validation cross entropy; test not used for selection"
+        },
+        "DeepSets_37": {
+          "selected_epoch": 57,
+          "weights_sha256": "779d3c4e62331e4c1dafa12b5ab77b534f19158a551f57056658cd4302e4579f",
+          "selection": "lowest validation cross entropy; test not used for selection"
+        },
+        "GraphSAGE_11": {
+          "selected_epoch": 45,
+          "weights_sha256": "45e639a9df2145d3face9d4a77a7f9b12ec853d95cec1e520447b94d15a593ef",
+          "selection": "lowest validation cross entropy; test not used for selection"
+        },
+        "GraphSAGE_23": {
+          "selected_epoch": 45,
+          "weights_sha256": "d48dbfb6074b7e1f24a71f73beda4dc26587f03153f957cf7a93390d56acfde6",
+          "selection": "lowest validation cross entropy; test not used for selection"
+        },
+        "GraphSAGE_37": {
+          "selected_epoch": 87,
+          "weights_sha256": "b5b59d667124f20589e0d0c45416745fff699aa3b53c7e19a302eff50b263966",
+          "selection": "lowest validation cross entropy; test not used for selection"
+        }
+      },
+      "train_feature_mean": [
+        330.6309509277344,
+        0.7181234359741211,
+        0.9343817830085754,
+        24.886554718017578,
+        15.716744422912598,
+        0.43460819125175476,
+        0.2887091040611267,
+        0.4656118154525757
+      ],
+      "train_feature_scale": [
+        238.08900451660156,
+        0.1607593446969986,
+        0.03800249844789505,
+        9.520780563354492,
+        6.12862491607666,
+        0.10960954427719116,
+        0.10627781599760056,
+        0.09151911735534668
+      ],
+      "split_sizes": {
+        "train": 33,
+        "validation": 10,
+        "test": 22
+      },
+      "timestamp_utc": "2026-09-21T16:33:55.073817+00:00",
+      "source_hashes": {
+        "src\\evaluation.py": "0ec3c6ed43215a9170db7eab0ade332274cb76a44ec0d76b1189de50c76dc5cc",
+        "src\\graph.py": "0ef0dc734610088f5f711c49d84cc9e683026dcf0600076e73c5a73f25507779",
+        "src\\interventions.py": "d9081fed4c16663f6ecedb7cf6dd12b44ba92ee5b8e5ca70e662680b4181b752",
+        "src\\models.py": "97ed23e1b2e2b07754516a5afc11fbcd35165bdcfb659e8b48667ed7a33b8fd9",
+        "src\\probes.py": "7befad15be048b36719bf7389947b5cc7f50510a8610ad49d0849b6bc9917a4c",
+        "src\\tcav.py": "b7096a5baac2b836d7e73b768cc1f2c956019be3bc4df32f27e0bc49e784e52f",
+        "experiments\\synthetic\\run.py": "e5fb2d17af43a66062b1dc3920d9cda6c37ec434917ed514e0f2d17a41e6205f",
+        "experiments\\bracs\\run.py": "f335bc74280d8b75689e5de5c9a0250a7bae5e6bfab172972fb23cd3be3fb2a0",
+        "configs\\study.yaml": "a1fd2b62dc2bc2760068d46de3a62b52e48852df45162c2b9cda8e5be2472a55",
+        "tests\\test_gcia.py": "47b3c68ee2b1b9efc0750b8a5781678569213e2689649d37ad6098b751e36fa4"
+      },
+      "config": {
+        "study": "minimal_functional_reliance",
+        "seeds": [
+          11,
+          23,
+          37
+        ],
+        "models": [
+          "DeepSets",
+          "GraphSAGE"
+        ],
+        "hidden": 32,
+        "layers": 3,
+        "learning_rate": 0.003,
+        "weight_decay": 0.0001,
+        "epochs": 160,
+        "threads": 2,
+        "batch_size": 64,
+        "probe": {
+          "binary_threshold": 0.8,
+          "continuous_threshold": 0.2,
+          "logistic_c": 1.0,
+          "ridge_alpha": 1.0,
+          "max_iter": 2000,
+          "permutations": 99,
+          "permutation_null": "independent grouped label permutations in train and held-out partitions",
+          "alpha": 0.05
+        },
+        "matched_controls": 8,
+        "equivalence_margin": 0.03,
+        "bootstrap_repetitions": 2000,
+        "confidence": 0.95,
+        "numerical_tolerance": 1e-06,
+        "control_attempts": 5000,
+        "synthetic": {
+          "concepts": [
+            "C_used",
+            "C_unused",
+            "C_relational"
+          ],
+          "split_repetitions": {
+            "train": 64,
+            "validation": 16,
+            "test": 32
+          },
+          "split_seeds": {
+            "train": 401,
+            "validation": 402,
+            "test": 403
+          },
+          "feature_noise": 0.25,
+          "label_flip_probability": 0.1,
+          "feature_strength": 2.0,
+          "relational_strength": 1.0,
+          "label_rule": "binary OR: y_clean = C_used OR C_relational; C_unused is absent"
+        },
+        "bracs": {
+          "concepts": [
+            "nuclear_area_pixels"
+          ],
+          "manifest": "../GCIA_archive/legacy/reports/cell_cohort/manifest.csv",
+          "source_manifest": "../GCIA_archive/legacy/data/bracs_expanded_study_manifest.csv",
+          "patient_metadata": "../GCIA_archive/legacy/data/bracs_slide_metadata.csv",
+          "cohort_protocol": "../GCIA_archive/legacy/reports/cell_cohort/protocol.json",
+          "excluded": "../GCIA_archive/legacy/reports/cell_cohort/excluded.csv",
+          "feature_index": 0,
+          "feature_strength": 0.1,
+          "control_mean_shift_ratio": 0.35,
+          "confirmatory": false,
+          "missing_evidence": [
+            "BLOCKED: requires independent concept annotations (Concept 2)",
+            "BLOCKED: requires independent concept annotations and cell/compartment labels (Concept 3)",
+            "Validated physical scale / MPP",
+            "Independent BRACS segmentation validation",
+            "Untouched formally locked confirmatory test set",
+            "Biological plausibility of edited feature vectors"
+          ]
+        }
+      },
+      "status": "completed"
+    }
+  },
+  "tests_result": {
+    "checks": [
+      {
+        "command": [
+          "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA\\.venv\\Scripts\\python.exe",
+          "-m",
+          "ruff",
+          "check",
+          "src",
+          "experiments/synthetic",
+          "experiments/bracs",
+          "tests"
+        ],
+        "cwd": "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA",
+        "returncode": 0,
+        "output": "All checks passed!\n"
+      },
+      {
+        "command": [
+          "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA\\.venv\\Scripts\\python.exe",
+          "-m",
+          "ruff",
+          "format",
+          "--check",
+          "src",
+          "experiments/synthetic",
+          "experiments/bracs",
+          "tests"
+        ],
+        "cwd": "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA",
+        "returncode": 0,
+        "output": "13 files already formatted\n"
+      },
+      {
+        "command": [
+          "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pytest",
+          "-q"
+        ],
+        "cwd": "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA",
+        "returncode": 0,
+        "output": "..................                                                       [100%]\n============================== warnings summary ===============================\n.venv\\Lib\\site-packages\\torch\\jit\\_script.py:1488\n.venv\\Lib\\site-packages\\torch\\jit\\_script.py:1488\n  C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA\\.venv\\Lib\\site-packages\\torch\\jit\\_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.\n    warnings.warn(\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n18 passed, 2 warnings in 12.72s\n"
+      },
+      {
+        "command": [
+          "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "tests/test_gcia.py"
+        ],
+        "cwd": "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA",
+        "returncode": 0,
+        "output": "...........                                                              [100%]\n============================== warnings summary ===============================\n.venv\\Lib\\site-packages\\torch\\jit\\_script.py:1488\n.venv\\Lib\\site-packages\\torch\\jit\\_script.py:1488\n  C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA\\.venv\\Lib\\site-packages\\torch\\jit\\_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.\n    warnings.warn(\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n11 passed, 2 warnings in 10.95s\n"
+      },
+      {
+        "command": [
+          "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider"
+        ],
+        "cwd": "C:\\Users\\Mahugnon\\Documents\\CB Biomedecine\\GCIA_archive\\legacy",
+        "returncode": 0,
+        "output": "......................................................................   [100%]\n70 passed in 27.42s\n"
+      }
+    ],
+    "passed": true,
+    "timestamp_utc": "2026-09-21T16:35:38.852187+00:00",
+    "source_hashes": {
+      "src\\evaluation.py": "0ec3c6ed43215a9170db7eab0ade332274cb76a44ec0d76b1189de50c76dc5cc",
+      "src\\graph.py": "0ef0dc734610088f5f711c49d84cc9e683026dcf0600076e73c5a73f25507779",
+      "src\\interventions.py": "d9081fed4c16663f6ecedb7cf6dd12b44ba92ee5b8e5ca70e662680b4181b752",
+      "src\\models.py": "97ed23e1b2e2b07754516a5afc11fbcd35165bdcfb659e8b48667ed7a33b8fd9",
+      "src\\probes.py": "7befad15be048b36719bf7389947b5cc7f50510a8610ad49d0849b6bc9917a4c",
+      "src\\tcav.py": "b7096a5baac2b836d7e73b768cc1f2c956019be3bc4df32f27e0bc49e784e52f",
+      "experiments\\synthetic\\run.py": "e5fb2d17af43a66062b1dc3920d9cda6c37ec434917ed514e0f2d17a41e6205f",
+      "experiments\\bracs\\run.py": "f335bc74280d8b75689e5de5c9a0250a7bae5e6bfab172972fb23cd3be3fb2a0",
+      "configs\\study.yaml": "a1fd2b62dc2bc2760068d46de3a62b52e48852df45162c2b9cda8e5be2472a55",
+      "tests\\test_gcia.py": "47b3c68ee2b1b9efc0750b8a5781678569213e2689649d37ad6098b751e36fa4"
+    }
+  },
+  "git_commit_sha": "7ef5bb76a0c469cf71849b5a6eec79b660a9d528",
+  "git_dirty": true,
+  "timestamp_utc": "2026-09-21T16:33:55.056226+00:00",
+  "config": {
+    "study": "minimal_functional_reliance",
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "models": [
+      "DeepSets",
+      "GraphSAGE"
+    ],
+    "hidden": 32,
+    "layers": 3,
+    "learning_rate": 0.003,
+    "weight_decay": 0.0001,
+    "epochs": 160,
+    "threads": 2,
+    "batch_size": 64,
+    "probe": {
+      "binary_threshold": 0.8,
+      "continuous_threshold": 0.2,
+      "logistic_c": 1.0,
+      "ridge_alpha": 1.0,
+      "max_iter": 2000,
+      "permutations": 99,
+      "permutation_null": "independent grouped label permutations in train and held-out partitions",
+      "alpha": 0.05
+    },
+    "matched_controls": 8,
+    "equivalence_margin": 0.03,
+    "bootstrap_repetitions": 2000,
+    "confidence": 0.95,
+    "numerical_tolerance": 1e-06,
+    "control_attempts": 5000,
+    "synthetic": {
+      "concepts": [
+        "C_used",
+        "C_unused",
+        "C_relational"
+      ],
+      "split_repetitions": {
+        "train": 64,
+        "validation": 16,
+        "test": 32
+      },
+      "split_seeds": {
+        "train": 401,
+        "validation": 402,
+        "test": 403
+      },
+      "feature_noise": 0.25,
+      "label_flip_probability": 0.1,
+      "feature_strength": 2.0,
+      "relational_strength": 1.0,
+      "label_rule": "binary OR: y_clean = C_used OR C_relational; C_unused is absent"
+    },
+    "bracs": {
+      "concepts": [
+        "nuclear_area_pixels"
+      ],
+      "manifest": "../GCIA_archive/legacy/reports/cell_cohort/manifest.csv",
+      "source_manifest": "../GCIA_archive/legacy/data/bracs_expanded_study_manifest.csv",
+      "patient_metadata": "../GCIA_archive/legacy/data/bracs_slide_metadata.csv",
+      "cohort_protocol": "../GCIA_archive/legacy/reports/cell_cohort/protocol.json",
+      "excluded": "../GCIA_archive/legacy/reports/cell_cohort/excluded.csv",
+      "feature_index": 0,
+      "feature_strength": 0.1,
+      "control_mean_shift_ratio": 0.35,
+      "confirmatory": false,
+      "missing_evidence": [
+        "BLOCKED: requires independent concept annotations (Concept 2)",
+        "BLOCKED: requires independent concept annotations and cell/compartment labels (Concept 3)",
+        "Validated physical scale / MPP",
+        "Independent BRACS segmentation validation",
+        "Untouched formally locked confirmatory test set",
+        "Biological plausibility of edited feature vectors"
+      ]
+    }
+  },
+  "source_hashes": {
+    "src\\evaluation.py": "0ec3c6ed43215a9170db7eab0ade332274cb76a44ec0d76b1189de50c76dc5cc",
+    "src\\graph.py": "0ef0dc734610088f5f711c49d84cc9e683026dcf0600076e73c5a73f25507779",
+    "src\\interventions.py": "d9081fed4c16663f6ecedb7cf6dd12b44ba92ee5b8e5ca70e662680b4181b752",
+    "src\\models.py": "97ed23e1b2e2b07754516a5afc11fbcd35165bdcfb659e8b48667ed7a33b8fd9",
+    "src\\probes.py": "7befad15be048b36719bf7389947b5cc7f50510a8610ad49d0849b6bc9917a4c",
+    "src\\tcav.py": "b7096a5baac2b836d7e73b768cc1f2c956019be3bc4df32f27e0bc49e784e52f",
+    "experiments\\synthetic\\run.py": "e5fb2d17af43a66062b1dc3920d9cda6c37ec434917ed514e0f2d17a41e6205f",
+    "experiments\\bracs\\run.py": "f335bc74280d8b75689e5de5c9a0250a7bae5e6bfab172972fb23cd3be3fb2a0",
+    "configs\\study.yaml": "a1fd2b62dc2bc2760068d46de3a62b52e48852df45162c2b9cda8e5be2472a55",
+    "tests\\test_gcia.py": "47b3c68ee2b1b9efc0750b8a5781678569213e2689649d37ad6098b751e36fa4"
+  },
+  "seeds": [
+    11,
+    23,
+    37
+  ],
+  "package_versions": {
+    "torch": "2.12.1",
+    "torch-geometric": "2.8.0.post1",
+    "numpy": "2.4.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "PyYAML": "6.0.2",
+    "pytest": "9.1.1",
+    "ruff": "0.16.8"
+  },
+  "missing_evidence": [
+    "BLOCKED: requires independent concept annotations (Concept 2)",
+    "BLOCKED: requires independent concept annotations and cell/compartment labels (Concept 3)",
+    "Validated physical scale / MPP",
+    "Independent BRACS segmentation validation",
+    "Untouched formally locked confirmatory test set",
+    "Biological plausibility of edited feature vectors"
+  ],
+  "effect": "total variation; target minus mean of matched controls; repeated controls averaged within graph",
+  "uncertainty": "percentile bootstrap of patient/independent-replicate means; pointwise intervals, exploratory across concepts/layers/seeds",
+  "equivalence": "margin fixed in study.yaml before evaluation; both excess CI within margin and target upper CI below margin required",
+  "tcav": "final pooled layer only, train-fitted increasing-concept direction; fraction of positive class-1 probability derivatives",
+  "controls": "feature: same coordinate, node count and L2 magnitude, balanced signs; relation: same replaced-edge count, degree and connected cycle, original mixing fraction",
+  "limitations": [
+    "Synthetic feature controls change within-graph variability and can leave generator support.",
+    "BRACS area-only edits do not co-edit axes or image pixels; technical feature reliance, not validated morphological intervention.",
+    "Random-model response does not establish learned task reliance.",
+    "No biological causality claim."
+  ],
+  "implementation_correction": "An initial synthetic execution exposed an invalid association null: train-only label shuffling can leave a random direction aligned with the true held-out concept. Final results rerun independent grouped train AND held-out label permutations. No architecture, optimizer, data, intervention, margin or threshold changed. A regression test covers exact visible encoding.",
+  "correction_verification": {
+    "all_six_synthetic_models_identical_before_and_after_permutation_correction": true,
+    "verified_against_first_execution": true,
+    "weight_sha256": {
+      "DeepSets_11": "d1eebe6391750444a075d57748287f47850bdf3bb657f34916bbf4ed88c416c5",
+      "DeepSets_23": "74cec8eb269fa0f29c4f6e42ba10d141f4010bee1aa663ccb43ea34c4cd3a487",
+      "DeepSets_37": "2e8354244475d4ca64dffec11c988f18038e092f7d47d7991d9581cf7ffee5b5",
+      "GraphSAGE_11": "0e4d5fff0d9c7488d6315005d1c83ef125ccb263c40b4be129f6e6775073d65a",
+      "GraphSAGE_23": "fca517ec8c2707f609c7ba72b50290f7dbbc44920edd83a0f6a4458f84495e3b",
+      "GraphSAGE_37": "c44c7226c6dd30f033e4a151a1cad099d3fb19646d989b627c2304fbe29718be"
+    },
+    "unchanged": [
+      "data",
+      "architectures",
+      "training",
+      "interventions",
+      "equivalence margin",
+      "probe thresholds"
+    ]
+  },
+  "python_version": "3.11.15 (main, Apr 14 2026, 14:31:26) [MSC v.1944 64 bit (AMD64)]",
+  "execution_notes": [
+    "Initial active test collection failed because experiments/synthetic/data.py was misplaced; repaired with a historical compatibility shim before experiments.",
+    "First synthetic execution was superseded only to correct the grouped permutation association null; all six trained weight hashes were verified identical.",
+    "BRACS rerun recorded the explicit validity failure: patient 22 matched controls introduce nonpositive area; no patient was removed and no strength was retuned."
+  ]
+}

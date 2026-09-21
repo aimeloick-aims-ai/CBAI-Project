@@ -1,5 +1,0 @@
-{
-  "reason": "Prior run stopped at fewer than two retained nuclei",
-  "policy": "Preserve crop/model; explicitly record unusable patients; do not invent nodes",
-  "original_protocol_sha256": "2b1ede4a851380a9143cf0c901e8e2c410a6943604fe859a7310d23d083d2740"
-}

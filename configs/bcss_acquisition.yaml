@@ -1,9 +1,0 @@
-dataset: BCSS
-scope: acquisition_smoke_only
-metadata_commit: 3c49d554497dd896cd02ffe382503ef4ce28b1c1
-limit: 2
-mpp: 1.0
-ignored_codes: [0, 7]
-raw_directory: data/raw/BCSS/smoke_v1
-external_test_opened: false
-# Downsampled regions are for acquisition/QC, not nuclear segmentation validation.

@@ -1,8 +1,0 @@
-{
-  "source": "https://huggingface.co/TIACentre/TIAToolbox_pretrained_weights/resolve/ea909bdcce3aa409bf436c09b4495cca90a8e99b/hovernet_fast-pannuke.pth",
-  "revision": "ea909bdcce3aa409bf436c09b4495cca90a8e99b",
-  "sha256": "789b2be8bdaf532627f584a009f83b3ba06e04c0e55c1635252ff12785ef57e8",
-  "bytes": 151109291,
-  "checksum_kind": "provider_LFS_SHA256",
-  "license_metadata": null
-}

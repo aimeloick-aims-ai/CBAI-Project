@@ -1,0 +1,31 @@
+{
+  "study": "focused_synthetic_followup",
+  "seeds": [
+    11,
+    23,
+    37
+  ],
+  "architectures": [
+    "DeepSets",
+    "GraphSAGE"
+  ],
+  "layers": 3,
+  "hidden": 32,
+  "epochs": 120,
+  "learning_rate": 0.003,
+  "split_repetitions": {
+    "train": 16,
+    "validation": 4,
+    "test": 8
+  },
+  "concepts": [
+    "used",
+    "unused",
+    "relational",
+    "irrelevant"
+  ],
+  "probe_auc_threshold": 0.8,
+  "model_absolute_effect_margin": 0.01,
+  "synthetic_recovery_gate": "not sufficient alone: require baselines, selectivity, support, equivalence and stability review",
+  "histology_test_open_allowed": false
+}

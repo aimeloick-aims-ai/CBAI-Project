@@ -1,9 +1,0 @@
-{
-  "source_sha256": "144f7330dd161a6e7c5645419a28bfbdfc835aa9d4cda5de55e73108c52d34ea",
-  "weight_sha256": "789b2be8bdaf532627f584a009f83b3ba06e04c0e55c1635252ff12785ef57e8",
-  "crop_size": 512,
-  "mpp": null,
-  "radius_pixels": 50,
-  "scope": "exploratory candidate cell graphs; segmentation unvalidated; historical patient test already explored",
-  "failure_policy": "fail rather than silently omit patients"
-}

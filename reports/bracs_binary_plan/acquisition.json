@@ -1,8 +1,0 @@
-{
-  "images": 40,
-  "patients": 40,
-  "verified_bytes": 253910405,
-  "proposal_sha256": "e664f2939bf90f34dc11b97c20268636f9948e086cc4f9774979a03cc58858e8",
-  "manifest_sha256": "51cf17108afe0ccfd8322880a78225686e519593b420c1f44c58c23a00d37866",
-  "test_status": "integrity_verified_only_no_model_evaluation"
-}

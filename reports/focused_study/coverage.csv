@@ -1,7 +1,0 @@
-patient,patches,valid_patches,candidate_edits,edits_passing_numeric_checks
-TCGA-A1-A0SK,35,35,0,0
-TCGA-A1-A0SP,88,88,3,0
-TCGA-A2-A04P,48,48,3,3
-TCGA-A2-A04Q,16,16,0,0
-TCGA-A2-A04T,98,91,3,3
-TCGA-A2-A0CM,63,63,3,1
