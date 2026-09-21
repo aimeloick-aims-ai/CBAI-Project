@@ -1,0 +1,45 @@
+{
+  "config": {
+    "study": "synthetic_mechanism_benchmark_v1",
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "architectures": [
+      "DeepSets",
+      "GCN",
+      "GraphSAGE",
+      "GATv2"
+    ],
+    "layers": 3,
+    "hidden": 32,
+    "epochs": 120,
+    "learning_rate": 0.003,
+    "split_repetitions": {
+      "train": 16,
+      "validation": 4,
+      "test": 8
+    },
+    "concepts": [
+      "used",
+      "unused",
+      "relational",
+      "irrelevant"
+    ],
+    "probe_auc_threshold": 0.8,
+    "model_absolute_effect_margin": 0.01,
+    "synthetic_recovery_gate": "not sufficient alone: require baselines, selectivity, support, equivalence and stability review",
+    "histology_test_open_allowed": false
+  },
+  "source_sha256": {
+    "experiments\\full_study\\config.json": "beaa9ae923a64d7b81d47c928694e9f2e8c36adb6e711b2ce23c1b36a270a4d8",
+    "experiments\\full_study\\run_synthetic.py": "e0bc9fc72e9d4f1bd5b58ba84b0fd9f2901070afe79466186062135de3cb96a2",
+    "experiments\\full_study\\synthetic.py": "8bfa13531239ff7a8d9f3be8a2fa909900887f98e0a7f052690938beb3835373"
+  },
+  "scope": "finite factorial software/mechanism benchmark, no histology; generator truth does not establish learned model use",
+  "inference": "graph replicates share factorial states; report descriptive per-seed results, no patient/population inference",
+  "control": "paired irrelevant-concept edit (graph identity); this negative control is NOT norm-matched; no selective functional-reliance claim",
+  "erasure": "CAV orthogonal projection, NOT LEACE; train-only direction and mean",
+  "tcav": "fraction of positive derivatives of baseline predicted-class logit along positively oriented CAV; descriptive, no significance test"
+}

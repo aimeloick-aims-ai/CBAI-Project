@@ -1,0 +1,111 @@
+{
+  "scores": [
+    {
+      "architecture": "DeepSets",
+      "seed": 11,
+      "accuracy": 0.5,
+      "validation_epoch": 120
+    },
+    {
+      "architecture": "DeepSets",
+      "seed": 23,
+      "accuracy": 0.5,
+      "validation_epoch": 120
+    },
+    {
+      "architecture": "DeepSets",
+      "seed": 37,
+      "accuracy": 0.5,
+      "validation_epoch": 120
+    },
+    {
+      "architecture": "GCN",
+      "seed": 11,
+      "accuracy": 1.0,
+      "validation_epoch": 120
+    },
+    {
+      "architecture": "GCN",
+      "seed": 23,
+      "accuracy": 1.0,
+      "validation_epoch": 120
+    },
+    {
+      "architecture": "GCN",
+      "seed": 37,
+      "accuracy": 1.0,
+      "validation_epoch": 120
+    },
+    {
+      "architecture": "GraphSAGE",
+      "seed": 11,
+      "accuracy": 1.0,
+      "validation_epoch": 120
+    },
+    {
+      "architecture": "GraphSAGE",
+      "seed": 23,
+      "accuracy": 1.0,
+      "validation_epoch": 120
+    },
+    {
+      "architecture": "GraphSAGE",
+      "seed": 37,
+      "accuracy": 1.0,
+      "validation_epoch": 120
+    },
+    {
+      "architecture": "GATv2",
+      "seed": 11,
+      "accuracy": 1.0,
+      "validation_epoch": 120
+    },
+    {
+      "architecture": "GATv2",
+      "seed": 23,
+      "accuracy": 1.0,
+      "validation_epoch": 120
+    },
+    {
+      "architecture": "GATv2",
+      "seed": 37,
+      "accuracy": 1.0,
+      "validation_epoch": 120
+    }
+  ],
+  "recovery": [
+    {
+      "architecture": "DeepSets",
+      "sensitivity_to_generator_dependence": 0.5,
+      "specificity_to_generator_dependence": 1.0,
+      "screen_errors": 3
+    },
+    {
+      "architecture": "GCN",
+      "sensitivity_to_generator_dependence": 1.0,
+      "specificity_to_generator_dependence": 1.0,
+      "screen_errors": 0
+    },
+    {
+      "architecture": "GraphSAGE",
+      "sensitivity_to_generator_dependence": 1.0,
+      "specificity_to_generator_dependence": 1.0,
+      "screen_errors": 0
+    },
+    {
+      "architecture": "GATv2",
+      "sensitivity_to_generator_dependence": 1.0,
+      "specificity_to_generator_dependence": 1.0,
+      "screen_errors": 0
+    }
+  ],
+  "progression_gate_passed": false,
+  "missing": [
+    "matched nontrivial intervention controls",
+    "equivalence procedure",
+    "GNNExplainer benchmark",
+    "LEACE implementation",
+    "independent randomized-model/label sanity checks"
+  ],
+  "warning": "Do not equate generator label dependence with learned-model dependence; descriptive threshold is not equivalence proof."
+}

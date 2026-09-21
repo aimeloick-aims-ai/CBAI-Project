@@ -1,0 +1,13 @@
+architecture,seed,accuracy,validation_epoch
+DeepSets,11,0.5,120
+DeepSets,23,0.5,120
+DeepSets,37,0.5,120
+GCN,11,1.0,120
+GCN,23,1.0,120
+GCN,37,1.0,120
+GraphSAGE,11,1.0,120
+GraphSAGE,23,1.0,120
+GraphSAGE,37,1.0,120
+GATv2,11,1.0,120
+GATv2,23,1.0,120
+GATv2,37,1.0,120

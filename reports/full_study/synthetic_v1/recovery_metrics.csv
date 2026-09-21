@@ -1,0 +1,5 @@
+architecture,sensitivity_to_generator_dependence,specificity_to_generator_dependence,screen_errors
+DeepSets,0.5,1.0,3
+GCN,1.0,1.0,0
+GraphSAGE,1.0,1.0,0
+GATv2,1.0,1.0,0
